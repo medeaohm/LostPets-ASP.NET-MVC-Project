@@ -1,0 +1,177 @@
+﻿@using LostPets.Data.Models.Types
+@model LostPets.Web.Areas.Administration.ViewModels.AdminPosts.AdminEditPostViewModel
+@{
+    ViewBag.Title = "Edit Post";
+}
+@using (Html.BeginForm("EditPost", "AdminPosts", FormMethod.Post, new { id = Model.Id, @class = "form", enctype = "multipart/form-data" }))
+{
+    <div class="container">
+        <div class="=row">
+            @Html.AntiForgeryToken()
+            <br />
+            <div class="col-md-4">
+                <h3>General Information</h3>
+                <br />
+                <div class="row">
+                    <div class="row">
+                        @Html.LabelFor(m => m.PostType)
+                    </div>
+                    <div class="row">
+                        @Html.DropDownListFor(m => m.PostType, EnumHelper.GetSelectList(typeof(PostType)), new { @class = "form-control", @value = "@Model.PostType" })
+                    </div>
+                    <div>
+                        @Html.ValidationMessageFor(m => m)
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="row">
+                        @Html.LabelFor(m => m.Title)
+                    </div>
+                    <div class="row">
+                        @Html.TextBoxFor(m => m.Title, new { @class = "form-control", @value = "@Model.Title" })
+                    </div>
+                    <div>
+                        @Html.ValidationMessageFor(m => m)
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="row">
+                        @Html.LabelFor(m => m.Content)
+                    </div>
+                    <div class="row">
+                        @Html.TextBoxFor(m => m.Content, new { @class = "form-control", @value = "@Model.Content" })
+                    </div>
+                    <div>
+                        @Html.ValidationMessageFor(m => m)
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="row">
+                        <strong>Image</strong>
+                    </div>
+                    <div class="row">
+                        <input type="file" name="UploadedImage" />
+                    </div>
+                </div>
+                <br />
+            </div>
+            <div class="col-md-4">
+                <h3>Location Information</h3>
+                <br />
+                @Html.HiddenFor(m => m.LocationId)
+                <div class="row">
+                    <div class="row">
+                        @Html.LabelFor(m => m.Location.City)
+                    </div>
+                    <div class="row">
+                        @Html.DropDownListFor(m => m.Location.City, EnumHelper.GetSelectList(typeof(City)), new { @class = "form-control", @value = "Model.Location.City" })
+                    </div>
+                    <div>
+                        @Html.ValidationMessageFor(m => m)
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="row">
+                        @Html.LabelFor(m => m.Location.Street)
+                    </div>
+                    <div class="row">
+                        @Html.TextBoxFor(m => m.Location.Street, new { @class = "form-control", @value = "@Model.Location.Street" })
+                    </div>
+                    <div>
+                        @Html.ValidationMessageFor(m => m)
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="row">
+                        @Html.LabelFor(m => m.Location.AdditionalInfo)
+                    </div>
+                    <div class="row">
+                        @Html.TextBoxFor(m => m.Location.AdditionalInfo, new { @class = "form-control", @value = "@Model.Location.AdditionalInfo" })
+                    </div>
+                    <div>
+                        @Html.ValidationMessageFor(m => m)
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h3>Pet Information</h3>
+                <br />
+                <div class="row">
+                    @Html.HiddenFor(m => m.PetId)
+                    <div class="row">
+                        @Html.LabelFor(m => m.Pet.PetType)
+                    </div>
+                    <div class="row">
+                        @Html.DropDownListFor(m => m.Pet.PetType, EnumHelper.GetSelectList(typeof(PetType)), new { @class = "form-control", @value = "@Model.Pet.PetType" })
+                    </div>
+                    <div>
+                        @Html.ValidationMessageFor(m => m)
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="row">
+                        @Html.LabelFor(m => m.Pet.Name)
+                    </div>
+                    <div class="row">
+                        @Html.TextBoxFor(m => m.Pet.Name, new { @class = "form-control", @value = "@Model.Pet.Name" })
+                    </div>
+                    <div>
+                        @Html.ValidationMessageFor(m => m)
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="row">
+                        @Html.LabelFor(m => m.Pet.Age)
+                    </div>
+                    <div class="row">
+                        @Html.TextBoxFor(m => m.Pet.Age, new { @class = "form-control", @value = "@Model.Pet.Age" })
+                    </div>
+                    <div>
+                        @Html.ValidationMessageFor(m => m)
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="row">
+                        @Html.LabelFor(m => m.Pet.Description)
+                    </div>
+                    <div class="row">
+                        @Html.TextBoxFor(m => m.Pet.Description, new { @class = "form-control", @value = "@Model.Pet.Description" })
+                    </div>
+                    <div>
+                        @Html.ValidationMessageFor(m => m)
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="row">
+                        @Html.LabelFor(m => m.Pet.Color)
+                    </div>
+                    <div class="row">
+                        @Html.TextBoxFor(m => m.Pet.Color, new { @class = "form-control", @value = "@Model.Pet.Color" })
+                    </div>
+                    <div>
+                        @Html.ValidationMessageFor(m => m)
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="text-center">
+                <input type="submit" value="Edit Post" class="btn btn-primary" />
+            </div>
+        </div>
+    </div>
+}
+
+@section scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+

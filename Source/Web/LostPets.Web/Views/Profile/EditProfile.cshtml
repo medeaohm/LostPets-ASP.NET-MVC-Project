@@ -1,0 +1,72 @@
+﻿@using LostPets.Web.Infrastructure.HtmlHelpers
+@using LostPets.Data.Models.Types
+@model LostPets.Web.ViewModels.Profile.EditProfileViewModel
+@{
+    ViewBag.Title = "Edit Profile";
+}
+@using (Html.BeginForm("EditProfile", "Profile", FormMethod.Post, new { @class = "form", enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+    <div class="container" style="position:center">
+        <h1 class="col-lg-12 well">Edit Profile</h1>
+        <div class="col-lg-12 well" style="padding-left:5em; padding-right:-5em;">
+            <div class="row">
+                <form>
+                    <div class="col-md-3 col-lg-3 " align="center">
+                        @if (@Model.ProfilePictureId != null)
+                        {
+                            <img src="@Url.Action("Image", "Profile", new { id = Model.ProfilePictureId.Value })" alt="@Model.UserName" class="img-circle img-responsive" />
+                        }
+                        else
+                        {
+                            <img src="http://jplabilocano.freetzi.com/images/Anonymous.png" alt="@Model.UserName" class="img-circle img-responsive" />
+                        }
+                        <div class="row">
+                            <br />
+                            <div>
+                                <strong class="pull-left">
+                                    Change Pofile Picture
+                                </strong>
+                                <br />
+                            </div>
+                            <br />
+                            <input type="file" name="UploadedImage" />
+                        </div>
+                    </div>
+
+                    <div class="col-sm-8">
+                        <div class="row">
+                            @Html.EditorFor(m => m.UserName)
+                            @Html.EditorFor(m => m.Email)
+                        </div>
+                        <div class="row">
+                            @Html.EditorFor(m => m.FirstName)
+                            @Html.EditorFor(m => m.LastName)
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 form-group">
+                                <label>Gender</label>
+                                @Html.DropDownListFor(m => m.Gender, EnumHelper.GetSelectList(typeof(Gender)), new { @class = "form-control" })
+                            </div>
+                            <div class="col-sm-6 form-group">
+                                <label>City</label>
+                                @Html.DropDownListFor(m => m.HomeCity, EnumHelper.GetSelectList(typeof(City)), new { @class = "form-control" })
+                            </div>
+                        </div>
+                        <div class="row">
+                            @Html.EditorFor(m => m.PhoneNumber)
+                            @Html.EditorFor(m => m.FacebookProfile)
+                        </div>
+                        <div class="pull-left">
+                            <input type="submit" class="btn btn-lg btn-success" value="Update Profile" />
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

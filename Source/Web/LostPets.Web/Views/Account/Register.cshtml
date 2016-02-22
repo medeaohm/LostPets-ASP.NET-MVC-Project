@@ -1,0 +1,54 @@
+﻿@using LostPets.Data.Models.Types
+@model LostPets.Web.ViewModels.Account.RegisterViewModel
+@{
+    ViewBag.Title = "Register";
+}
+@using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="container" style="position:center">
+        <h1 class="col-lg-8 well">Register</h1>
+        <div class="col-lg-8 well" style="padding-left:5em; padding-right:-5em;">
+            <div class="row">
+                <form>
+                    <div class="col-sm-12">
+                        <div class="row">
+                            @Html.EditorFor(m => m.UserName)
+                            @Html.EditorFor(m => m.Email)
+                        </div>
+                        <div class="row">
+                            @Html.EditorFor(m => m.FirstName)
+                            @Html.EditorFor(m => m.LastName)
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 form-group">
+                                <label>Gender</label>
+                                @Html.DropDownListFor(m => m.Gender, EnumHelper.GetSelectList(typeof(Gender)), new { @class = "form-control" })
+                            </div>
+                            <div class="col-sm-6 form-group">
+                                <label>City</label>
+                                @Html.DropDownListFor(m => m.HomeCity, EnumHelper.GetSelectList(typeof(City)), new { @class = "form-control" })
+                            </div>
+                        </div>
+                        <div class="row">
+                            @Html.EditorFor(m => m.PhoneNumber)
+                            @Html.EditorFor(m => m.FacebookProfile)
+                        </div>
+                        <div class="row">
+                            @Html.EditorFor(m => m.Password)
+                            @Html.EditorFor(m => m.ConfirmPassword)
+                        </div>
+                        <div class="pull-left">
+                            <input type="submit" class="btn btn-lg btn-success" value="Register" />
+                        </div>                     
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

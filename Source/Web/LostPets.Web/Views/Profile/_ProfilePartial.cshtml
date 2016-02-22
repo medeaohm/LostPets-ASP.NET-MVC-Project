@@ -1,0 +1,65 @@
+﻿@model LostPets.Web.ViewModels.Profile.ProfileViewModel
+
+<div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad">
+        <div class="panel panel-success">
+            <div class="panel-heading">
+                <h3 class="panel-title text-capitalize text-center">@Model.UserName</h3>
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-3 col-lg-3 " align="center">
+                        @if (@Model.ProfilePictureId != null)
+                        {
+                            <img src="@Url.Action("Image", "Profile", new { id = Model.ProfilePictureId.Value })" alt="@Model.UserName" class="img-circle img-responsive" />
+                        }
+                        else
+                        {
+                            <img src="http://jplabilocano.freetzi.com/images/Anonymous.png" alt="@Model.UserName" class="img-circle img-responsive" />
+                        }
+                    </div>
+                    <div class=" col-md-9 col-lg-9 ">
+                        <table class="table table-user-information">
+                            <tbody>
+                                <tr>
+                                    <td>First Name:</td>
+                                    <td>@Model.FirstName</td>
+                                </tr>
+                                <tr>
+                                    <td>Last Name</td>
+                                    <td>@Model.LastName</td>
+                                </tr>
+                                <tr>
+                                    <td>Email:</td>
+                                    <td>@Model.Email</td>
+                                </tr>
+                                <tr>
+                                    <td>Phone Number:</td>
+                                    <td>@Model.PhoneNumber</td>
+                                </tr>
+                                <tr>
+                                    <td>Gender</td>
+                                    <td>@Model.Gender.ToString()</td>
+                                </tr>
+                                <tr>
+                                    <td>City</td>
+                                    <td>@Model.HomeCity.ToString()</td>
+                                </tr>
+                                <tr>
+                                    <td>Number of Comments</td>
+                                    <td>@Model.NumberOfComments</td>
+                                </tr>
+                                <tr>
+                                    <td>Number of Posts</td>
+                                    <td>@Model.NumberOfPosts</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-footer">
+            </div>
+        </div>
+    </div>
+</div>

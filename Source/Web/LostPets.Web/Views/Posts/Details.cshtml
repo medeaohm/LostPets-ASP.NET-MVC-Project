@@ -1,0 +1,38 @@
+﻿@using LostPets.Web.ViewModels.Comments
+@using LostPets.Web.ViewModels.Posts
+
+@model PostViewModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<div class="container">
+    <div class="row">
+        <br />
+        <div class="col-lg-8">
+            @Html.Partial("_PostPartial")
+        </div>
+        <div class="col-lg-4">
+            <br />
+            @if (User.Identity.IsAuthenticated)
+            {
+                @Html.Partial("../Comments/_PostCommentPartial", new PostCommentViewModel(Model.Id))
+            }
+
+            @if (Model.Comments.Any())
+            {
+                <div id="comments">
+                    @foreach (var comment in Model.OrderedComments)
+                {
+                        @Html.Partial("../Comments/_CommentPartial", comment)
+                    }
+                </div>
+            }
+        </div>
+    </div>
+</div>
+@section scripts {
+    @Scripts.Render("~/bundles/jqueryajax")
+    @Scripts.Render("~/bundles/jqueryval")
+}

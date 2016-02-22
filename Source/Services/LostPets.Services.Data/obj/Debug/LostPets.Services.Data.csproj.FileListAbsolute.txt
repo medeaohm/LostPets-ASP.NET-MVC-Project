@@ -1,0 +1,17 @@
+C:\Users\Adrian\Desktop\Telerik-Academy\ASP.NET - MVC\IndividualProject\LostPets\Source\Services\LostPets.Services.Data\bin\Debug\LostPets.Services.Data.dll
+C:\Users\Adrian\Desktop\Telerik-Academy\ASP.NET - MVC\IndividualProject\LostPets\Source\Services\LostPets.Services.Data\bin\Debug\LostPets.Services.Data.pdb
+C:\Users\Adrian\Desktop\Telerik-Academy\ASP.NET - MVC\IndividualProject\LostPets\Source\Services\LostPets.Services.Data\bin\Debug\LostPets.Data.Common.dll
+C:\Users\Adrian\Desktop\Telerik-Academy\ASP.NET - MVC\IndividualProject\LostPets\Source\Services\LostPets.Services.Data\bin\Debug\LostPets.Data.Models.dll
+C:\Users\Adrian\Desktop\Telerik-Academy\ASP.NET - MVC\IndividualProject\LostPets\Source\Services\LostPets.Services.Data\bin\Debug\LostPets.Services.Web.dll
+C:\Users\Adrian\Desktop\Telerik-Academy\ASP.NET - MVC\IndividualProject\LostPets\Source\Services\LostPets.Services.Data\bin\Debug\EntityFramework.dll
+C:\Users\Adrian\Desktop\Telerik-Academy\ASP.NET - MVC\IndividualProject\LostPets\Source\Services\LostPets.Services.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Adrian\Desktop\Telerik-Academy\ASP.NET - MVC\IndividualProject\LostPets\Source\Services\LostPets.Services.Data\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Adrian\Desktop\Telerik-Academy\ASP.NET - MVC\IndividualProject\LostPets\Source\Services\LostPets.Services.Data\bin\Debug\LostPets.Data.Common.pdb
+C:\Users\Adrian\Desktop\Telerik-Academy\ASP.NET - MVC\IndividualProject\LostPets\Source\Services\LostPets.Services.Data\bin\Debug\LostPets.Data.Models.pdb
+C:\Users\Adrian\Desktop\Telerik-Academy\ASP.NET - MVC\IndividualProject\LostPets\Source\Services\LostPets.Services.Data\bin\Debug\LostPets.Services.Web.pdb
+C:\Users\Adrian\Desktop\Telerik-Academy\ASP.NET - MVC\IndividualProject\LostPets\Source\Services\LostPets.Services.Data\bin\Debug\EntityFramework.xml
+C:\Users\Adrian\Desktop\Telerik-Academy\ASP.NET - MVC\IndividualProject\LostPets\Source\Services\LostPets.Services.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Adrian\Desktop\Telerik-Academy\ASP.NET - MVC\IndividualProject\LostPets\Source\Services\LostPets.Services.Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Adrian\Desktop\Telerik-Academy\ASP.NET - MVC\IndividualProject\LostPets\Source\Services\LostPets.Services.Data\obj\Debug\LostPets.Services.Data.csprojResolveAssemblyReference.cache
+C:\Users\Adrian\Desktop\Telerik-Academy\ASP.NET - MVC\IndividualProject\LostPets\Source\Services\LostPets.Services.Data\obj\Debug\LostPets.Services.Data.dll
+C:\Users\Adrian\Desktop\Telerik-Academy\ASP.NET - MVC\IndividualProject\LostPets\Source\Services\LostPets.Services.Data\obj\Debug\LostPets.Services.Data.pdb

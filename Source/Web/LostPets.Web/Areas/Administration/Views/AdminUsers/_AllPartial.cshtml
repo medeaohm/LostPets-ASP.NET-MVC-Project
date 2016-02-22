@@ -1,0 +1,27 @@
+﻿@model LostPets.Web.Areas.Administration.ViewModels.AdminUsers.AdminUserViewModel
+@{
+    ViewBag.Title = "_AllPartial";
+}
+<div class="row">
+    <div class="col-md-2 text-center">
+        @if (Model.ProfilePicture != null)
+        {
+            <img src="@Url.Action("Image", "AdminUsers", new { id = Model.ProfilePicture.Id })" alt="@Model.UserName" class="img-responsive" width="50" />
+        }
+    </div>
+    <div class="col-md-2 text-center">
+        @Model.UserName
+    </div>
+    <div class="col-md-2 text-center">
+        @Model.Email
+    </div>
+    <div class="col-md-3 text-center">
+        @Model.Id
+    </div>
+    <div class="col-md-1">
+        @Html.ActionLink("Delete", "DeleteUser", new { id = Model.Id })
+    </div>
+</div>
+<br />
+
+

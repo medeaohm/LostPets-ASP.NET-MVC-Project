@@ -1,0 +1,30 @@
+﻿@model LostPets.Web.ViewModels.Posts.PostViewModel
+@{
+    ViewBag.Title = "_PostPartial";
+}
+<div class="row">
+    <div class="col-md-2 text-center">
+        @Model.Title
+    </div>
+    <div class="col-md-1 text-center">
+        @if (@Model.Photo != null)
+        {
+            <img src="@Url.Action("Image", "Posts", new { id = Model.Photo.Id })" alt="@Model.Title" class="img-responsive" width="50" />
+        }
+    </div>
+    <div class="col-md-1 text-center">
+        @Model.PostType
+    </div>
+    <div class="col-md-1 text-center">
+        @Model.Pet.PetType
+    </div>
+    <div class="col-md-2 text-center">
+        @Model.Location.City
+    </div>
+    <div class="col-md-2 text-center">
+        @Model.Author.UserName
+    </div> 
+</div>
+<br />
+
+

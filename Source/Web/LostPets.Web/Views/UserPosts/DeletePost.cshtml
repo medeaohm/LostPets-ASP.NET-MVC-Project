@@ -1,0 +1,39 @@
+﻿@using LostPets.Web.ViewModels.Comments
+@using LostPets.Web.ViewModels.Posts
+
+@model PostViewModel
+@{
+    ViewBag.Title = "Delete Post";
+}
+
+<h2>Are you sure you want to delete this post and all its comments? </h2>
+
+<div>
+    <div class="container">
+        @Html.Partial("../Posts/_PostDetailsPartial")
+    </div>
+
+    <br />
+    @if (Model.Comments.Any())
+    {
+        <div id="comments">
+            @foreach (var comment in Model.Comments)
+            {
+                @Html.Partial("../Comments/_CommentPartial", comment)
+            }
+        </div>
+    }
+
+    @using (Html.BeginForm("DeleteConfirmed", "UserPosts", new { id = Model.Id }, FormMethod.Post))
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <div class="text-center">
+                <input type="submit" value="Delete Post" class="btn btn-danger" />
+            </div>
+            @Html.ActionLink("Back to List", "AllByUser")
+        </div>
+    }
+</div>
+

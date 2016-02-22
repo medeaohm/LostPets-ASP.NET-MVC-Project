@@ -1,0 +1,14 @@
+﻿@model LostPets.Web.ViewModels.Posts.ListPostViewModel
+@{
+    ViewBag.Title = "Home Page";
+}
+<div class="jumbotron text-center text-primary" style="background-image:url('https://www.petfinder.com/wp-content/uploads/2012/11/dog-how-to-select-your-new-best-friend-thinkstock99062463.jpg')">
+    <h1>Most Recent Posts</h1>
+</div>
+
+<div class="container">
+    @foreach (var post in Model.Posts)
+    {
+        @Html.Partial("../Posts/_PostPartial", post)
+    }
+</div>

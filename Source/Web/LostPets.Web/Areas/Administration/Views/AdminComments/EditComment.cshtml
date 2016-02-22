@@ -1,0 +1,36 @@
+﻿@model LostPets.Web.Areas.Administration.ViewModels.AdminComments.AdminEditCommentViewModel
+@{
+    ViewBag.Title = "Edit Comment";
+}
+@using (Html.BeginForm("EditComment", "AdminComments", FormMethod.Post, new { id = Model.Id, @class = "form", enctype = "multipart/form-data" }))
+{
+    <div class="container">
+        <div class="=row">
+            @Html.AntiForgeryToken()
+            <br />
+            <div class="row">
+                <div class="row">
+                    <div class="row">
+                        @Html.LabelFor(m => m.Content)
+                    </div>
+                    <div class="row">
+                        @Html.TextBoxFor(m => m.Content, new { @class = "form-control", @value = "@Model.Content" })
+                    </div>
+                    <div>
+                        @Html.ValidationMessageFor(m => m)
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="text-center">
+                <input type="submit" value="Edit Post" class="btn btn-primary" />
+            </div>
+        </div>
+    </div>
+}
+
+@section scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+

@@ -1,0 +1,16 @@
+C:\Users\Adrian\Desktop\Telerik-Academy\ASP.NET - MVC\IndividualProject\LostPets\Source\Data\LostPets.Data.Models\bin\Debug\LostPets.Data.Models.dll.config
+C:\Users\Adrian\Desktop\Telerik-Academy\ASP.NET - MVC\IndividualProject\LostPets\Source\Data\LostPets.Data.Models\bin\Debug\LostPets.Data.Models.dll
+C:\Users\Adrian\Desktop\Telerik-Academy\ASP.NET - MVC\IndividualProject\LostPets\Source\Data\LostPets.Data.Models\bin\Debug\LostPets.Data.Models.pdb
+C:\Users\Adrian\Desktop\Telerik-Academy\ASP.NET - MVC\IndividualProject\LostPets\Source\Data\LostPets.Data.Models\bin\Debug\EntityFramework.dll
+C:\Users\Adrian\Desktop\Telerik-Academy\ASP.NET - MVC\IndividualProject\LostPets\Source\Data\LostPets.Data.Models\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Adrian\Desktop\Telerik-Academy\ASP.NET - MVC\IndividualProject\LostPets\Source\Data\LostPets.Data.Models\bin\Debug\LostPets.Data.Common.dll
+C:\Users\Adrian\Desktop\Telerik-Academy\ASP.NET - MVC\IndividualProject\LostPets\Source\Data\LostPets.Data.Models\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Adrian\Desktop\Telerik-Academy\ASP.NET - MVC\IndividualProject\LostPets\Source\Data\LostPets.Data.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Adrian\Desktop\Telerik-Academy\ASP.NET - MVC\IndividualProject\LostPets\Source\Data\LostPets.Data.Models\bin\Debug\LostPets.Data.Common.pdb
+C:\Users\Adrian\Desktop\Telerik-Academy\ASP.NET - MVC\IndividualProject\LostPets\Source\Data\LostPets.Data.Models\bin\Debug\EntityFramework.xml
+C:\Users\Adrian\Desktop\Telerik-Academy\ASP.NET - MVC\IndividualProject\LostPets\Source\Data\LostPets.Data.Models\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Adrian\Desktop\Telerik-Academy\ASP.NET - MVC\IndividualProject\LostPets\Source\Data\LostPets.Data.Models\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Adrian\Desktop\Telerik-Academy\ASP.NET - MVC\IndividualProject\LostPets\Source\Data\LostPets.Data.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Adrian\Desktop\Telerik-Academy\ASP.NET - MVC\IndividualProject\LostPets\Source\Data\LostPets.Data.Models\obj\Debug\LostPets.Data.Models.csprojResolveAssemblyReference.cache
+C:\Users\Adrian\Desktop\Telerik-Academy\ASP.NET - MVC\IndividualProject\LostPets\Source\Data\LostPets.Data.Models\obj\Debug\LostPets.Data.Models.dll
+C:\Users\Adrian\Desktop\Telerik-Academy\ASP.NET - MVC\IndividualProject\LostPets\Source\Data\LostPets.Data.Models\obj\Debug\LostPets.Data.Models.pdb

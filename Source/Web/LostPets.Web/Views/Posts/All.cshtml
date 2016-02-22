@@ -1,0 +1,104 @@
+﻿@using LostPets.Data.Models.Types
+@using LostPets.Web.ViewModels.Posts
+@model LostPets.Web.ViewModels.Posts.PageableListPostViewModel
+@{
+    ViewBag.Title = "Home Page";
+}
+<div class="container">
+    <h1 class="text-center"> All Posts</h1>
+    @using (Html.BeginForm("All", "Posts", FormMethod.Get, new { @class = "form", enctype = "multipart/form-data" }))
+    {
+        <div class="row">
+            <div class="col-md-3">
+                <div class="row">
+                    @Html.LabelFor(m => m.PostType)
+                </div>
+                <div class="row">
+                    @Html.DropDownListFor(m => m.PostType, EnumHelper.GetSelectList(typeof(PostType)), "Select Post Type", new { @class = "form-control" })
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="row">
+                    @Html.LabelFor(m => m.PetType)
+                </div>
+                <div class="row">
+                    @Html.DropDownListFor(m => m.PetType, EnumHelper.GetSelectList(typeof(PetType)), "Select Pet Type", new { @class = "form-control" })
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="row">
+                    @Html.LabelFor(m => m.City)
+                </div>
+                <div class="row">
+                    @Html.DropDownListFor(m => m.City, EnumHelper.GetSelectList(typeof(City)), "Select City", new { @class = "form-control" })
+                </div>
+            </div>
+            <div class="col-md-3 pull-right">
+                <br />
+                <div class="text-center">
+                    <input type="submit" value="Find" class="btn btn-primary" />
+                </div>
+            </div>
+        </div>
+    }
+    <br />
+    <div class="row">
+        <div class="col-md-2 text-center">
+            Title
+        </div>
+        <div class="col-md-1 text-center">
+            Photo
+        </div>
+        <div class="col-md-1 text-center">
+            Post Type
+        </div> 
+        <div class="col-md-1 text-center">
+            Animal Type
+        </div> 
+        <div class="col-md-2 text-center">
+            City
+        </div>    
+        <div class="col-md-2 text-center">
+            Posted by
+        </div> 
+    </div>
+    <br />
+    <div class="row">
+        @foreach (var post in Model.Posts)
+        {
+            @Html.Partial("_AllPostPartial", post)
+        }
+    </div>  
+    <div class="row text-center">
+        <nav>
+            <ul class="pagination">
+                @if (Model.CurrentPage > 1)
+                {
+                    <li>
+                        <a href="/Posts/All/@(Model.CurrentPage - 1)" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                }
+                @for (int i = 1; i < Model.TotalPages; i++)
+                {
+                    var className = string.Empty;
+                    if (Model.CurrentPage == i)
+                    {
+                        className = "active";
+                    }
+                    <li class="@className"><a href="/Posts/All/@i">@i</a></li>
+                }
+
+                @if (Model.CurrentPage < Model.TotalPages)
+                {
+                    <li>
+                        <a href="/Posts/All/@(Model.CurrentPage+1)" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                }
+            </ul>
+        </nav>
+    </div>
+</div>

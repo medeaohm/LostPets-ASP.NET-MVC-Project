@@ -1,0 +1,28 @@
+﻿@model LostPets.Web.Areas.Administration.ViewModels.AdminComments.AdminCommentViewModel
+@{
+    ViewBag.Title = "_AllPartial";
+}
+<div class="row">
+    <div class="col-md-1 text-center">
+        @Model.Id
+    </div>
+    <div class="col-md-3 text-center">
+        @Model.Content
+    </div>
+    <div class="col-md-2 text-center">
+        @Model.Author.UserName
+    </div>
+    <div class="col-md-1 text-center">
+        @Model.Post.Id
+    </div>
+    <div class="col-md-2 text-center">
+        @Model.Post.Title
+    </div> 
+    <div class="col-md-2">
+        @Html.ActionLink("Edit", "EditComment", new { id = Model.Id }) |
+        @Html.ActionLink("Delete", "DeleteComment", new { id = Model.Id })
+    </div>
+</div>
+<br />
+
+
