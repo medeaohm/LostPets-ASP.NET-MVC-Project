@@ -1041,7 +1041,6 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Scripts\jquery-2.2.0.min.map" />
     <Content Include="Views\Posts\Details.cshtml" />
-    <Content Include="Views\Posts\_PostDetailsPartial.cshtml" />
     <Content Include="Views\Posts\All.cshtml" />
     <Content Include="Views\Posts\_PostPartial.cshtml" />
     <Content Include="Scripts\kendo\jquery.min.map" />

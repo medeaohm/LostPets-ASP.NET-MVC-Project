@@ -8,3 +8,8 @@ C:\Users\Adrian\Desktop\ASP .NET MVC Project - Lost Pets\Source\Services\LostPet
 C:\Users\Adrian\Desktop\ASP .NET MVC Project - Lost Pets\Source\Services\LostPets.Services.Web\obj\Debug\LostPets.Services.Web.csprojResolveAssemblyReference.cache
 C:\Users\Adrian\Desktop\ASP .NET MVC Project - Lost Pets\Source\Services\LostPets.Services.Web\obj\Debug\LostPets.Services.Web.dll
 C:\Users\Adrian\Desktop\ASP .NET MVC Project - Lost Pets\Source\Services\LostPets.Services.Web\obj\Debug\LostPets.Services.Web.pdb
+C:\Users\Adrian\Desktop\LostPets-ASP.NET-MVC-Project\Source\Services\LostPets.Services.Web\bin\Debug\LostPets.Services.Web.dll
+C:\Users\Adrian\Desktop\LostPets-ASP.NET-MVC-Project\Source\Services\LostPets.Services.Web\bin\Debug\LostPets.Services.Web.pdb
+C:\Users\Adrian\Desktop\LostPets-ASP.NET-MVC-Project\Source\Services\LostPets.Services.Web\obj\Debug\LostPets.Services.Web.csprojResolveAssemblyReference.cache
+C:\Users\Adrian\Desktop\LostPets-ASP.NET-MVC-Project\Source\Services\LostPets.Services.Web\obj\Debug\LostPets.Services.Web.dll
+C:\Users\Adrian\Desktop\LostPets-ASP.NET-MVC-Project\Source\Services\LostPets.Services.Web\obj\Debug\LostPets.Services.Web.pdb
