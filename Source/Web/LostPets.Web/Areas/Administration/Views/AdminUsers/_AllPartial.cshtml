@@ -2,26 +2,28 @@
 @{
     ViewBag.Title = "_AllPartial";
 }
-<div class="row">
-    <div class="col-md-2 text-center">
-        @if (Model.ProfilePicture != null)
+<tr class="active">
+    <td>
+        @if (@Model.ProfilePicture != null)
         {
-            <img src="@Url.Action("Image", "AdminUsers", new { id = Model.ProfilePicture.Id })" alt="@Model.UserName" class="img-responsive" width="50" />
+            <img src="@Url.Action("Image", "AdminPosts", new { id = Model.ProfilePicture.Id })" alt="@Model.UserName" class="img-responsive" width="70" />
         }
-    </div>
-    <div class="col-md-2 text-center">
-        @Model.UserName
-    </div>
-    <div class="col-md-2 text-center">
+        else
+        {
+            <img src="http://jplabilocano.freetzi.com/images/Anonymous.png" alt="@Model.UserName" class="img-responsive" width="70" />
+        }
+    </td>
+    <td>
+        <a href="@Model.UserUrl">@Model.UserName </a>
+    </td>
+    <td>
         @Model.Email
-    </div>
-    <div class="col-md-3 text-center">
+    </td>
+    <td>
         @Model.Id
-    </div>
-    <div class="col-md-1">
-        @Html.ActionLink("Delete", "DeleteUser", new { id = Model.Id })
-    </div>
-</div>
-<br />
-
+    </td>
+    <td>
+        @Html.ActionLink("Delete", "DeleteUser", new { id = Model.Id }, new { @class = "btn btn-xs btn-danger" })
+    </td>
+</tr>
 

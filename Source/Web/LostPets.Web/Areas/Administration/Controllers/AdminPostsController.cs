@@ -72,7 +72,10 @@
             {
                 CurrentPage = page,
                 TotalPages = totalPages,
-                Posts = posts
+                Posts = posts,
+                PostType = postType,
+                PetType = petType,
+                City = city
             };
 
             return this.View(viewModel);

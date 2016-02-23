@@ -4,43 +4,46 @@
     ViewBag.Title = "_AllPartial";
 }
 
+@{var className = string.Empty;}
+
 @if (Model.PostType == PostType.Lost)
 {
-    @Html.Raw("<tr class=\"danger\">")
+    className = "danger";
 }
 else
 {
-    @Html.Raw("<tr class=\"info\">")
+    className = "info";
 }
-<td>
-    @if (@Model.Photo != null)
-    {
-        <img src="@Url.Action("Image", "AdminPosts", new { id = Model.Photo.Id })" alt="@Model.Title" class="img-responsive" width="70" />
-    }
-    else
-    {
-        <img src="http://europeandemocracy.eu/wp-content/themes/groovy1/inc/img/no_image.jpg" alt="@Model.Title" class="img-responsive" width="70" />
-    }
-</td>
-<td>
-    <a href="@Model.Url" class="panel-title text-center">@Model.Title</a>
-</td>
-<td>
-    @Model.PostType
-</td>
-<td>
-    @Model.Pet.PetType
-</td>
-<td>
-    @Model.Location.City
-</td>
-<td>
-    <a href="@Model.UserUrl">@Model.Author.UserName </a>
-</td>
-<td>
-    @Html.ActionLink("Edit", "EditPost", new { id = Model.Id }, new { @class = "btn btn-xs btn-default" })
-    @Html.ActionLink("Delete", "DeletePost", new { id = Model.Id }, new { @class = "btn btn-xs btn-danger" })
-</td>
+<tr class="@className">
+    <td>
+        @if (@Model.Photo != null)
+        {
+            <img src="@Url.Action("Image", "AdminPosts", new { id = Model.Photo.Id })" alt="@Model.Title" class="img-responsive" width="70" />
+        }
+        else
+        {
+            <img src="http://europeandemocracy.eu/wp-content/themes/groovy1/inc/img/no_image.jpg" alt="@Model.Title" class="img-responsive" width="70" />
+        }
+    </td>
+    <td>
+        <a href="@Model.Url" class="panel-title text-center">@Model.Title</a>
+    </td>
+    <td>
+        @Model.PostType
+    </td>
+    <td>
+        @Model.Pet.PetType
+    </td>
+    <td>
+        @Model.Location.City
+    </td>
+    <td>
+        <a href="@Model.UserUrl">@Model.Author.UserName </a>
+    </td>
+    <td>
+        @Html.ActionLink("Edit", "EditPost", new { id = Model.Id }, new { @class = "btn btn-xs btn-default" })
+        @Html.ActionLink("Delete", "DeletePost", new { id = Model.Id }, new { @class = "btn btn-xs btn-danger" })
+    </td>
 </tr>
 
 

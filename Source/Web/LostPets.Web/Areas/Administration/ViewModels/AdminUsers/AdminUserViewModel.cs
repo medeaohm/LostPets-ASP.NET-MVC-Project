@@ -12,5 +12,13 @@
         public string Email { get; set; }
 
         public Photo ProfilePicture { get; set; }
+
+        public string UserUrl
+        {
+            get
+            {
+                return $"/Profile/ViewUserProfile/{this.Id}";
+            }
+        }
     }
 }
