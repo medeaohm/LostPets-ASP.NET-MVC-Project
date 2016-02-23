@@ -2,27 +2,27 @@
 @{
     ViewBag.Title = "_AllPartial";
 }
-<div class="row">
-    <div class="col-md-1 text-center">
+
+<tr class="active">
+    <td>
         @Model.Id
-    </div>
-    <div class="col-md-3 text-center">
+    </td>
+    <td>
         @Model.Content
-    </div>
-    <div class="col-md-2 text-center">
-        @Model.Author.UserName
-    </div>
-    <div class="col-md-1 text-center">
+    </td>
+    <td>
+        <a href="@Model.UserUrl">@Model.Author.UserName </a>
+    </td>
+    <td>
         @Model.Post.Id
-    </div>
-    <div class="col-md-2 text-center">
-        @Model.Post.Title
-    </div> 
-    <div class="col-md-2">
-        @Html.ActionLink("Edit", "EditComment", new { id = Model.Id }) |
-        @Html.ActionLink("Delete", "DeleteComment", new { id = Model.Id })
-    </div>
-</div>
-<br />
+    </td>
+    <td>
+        <a href="@Model.PostUrl">@Model.Post.Title </a>
+    </td>
+    <td>
+        @Html.ActionLink("Edit", "EditComment", new { id = Model.Id }, new { @class = "btn btn-xs btn-default" })
+        @Html.ActionLink("Delete", "DeleteComment", new { id = Model.Id }, new { @class = "btn btn-xs btn-danger" })
+    </td>
+</tr>
 
 

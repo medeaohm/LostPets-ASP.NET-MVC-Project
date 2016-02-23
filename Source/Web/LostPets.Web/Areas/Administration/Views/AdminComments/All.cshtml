@@ -4,34 +4,27 @@
 }
 <div class="container">
     <h1 class="text-center">All Comments</h1>
-    @*@using (Html.BeginForm("All", "AdminComments", FormMethod.Get, new { @class = "form", enctype = "multipart/form-data" }))
-    {
-    }*@
-    <br />
     <div class="row">
-        <div class="col-md-1 text-center">
-            Id
-        </div>
-        <div class="col-md-3 text-center">
-           Content
-        </div>
-        <div class="col-md-2 text-center">
-           Author UserName
-        </div>
-        <div class="col-md-1 text-center">
-            Post Id
-        </div>
-        <div class="col-md-2 text-center">
-            Post Title
-        </div> 
+        <table class="table table-striped table-hover ">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Content</th>
+                    <th>Posted by</th>
+                    <th>Post Id</th>
+                    <th>Post Title</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var comment in Model.Comments)
+                {
+                    @Html.Partial("_AllPartial", comment)
+                }
+            </tbody>
+        </table>
     </div>
-    <br />
-    <div class="row">
-        @foreach (var comment in Model.Comments)
-        {
-            @Html.Partial("_AllPartial", comment)
-        }
-    </div>  
+
     <div class="row text-center">
         <nav>
             <ul class="pagination">

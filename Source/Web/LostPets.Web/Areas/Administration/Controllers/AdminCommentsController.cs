@@ -11,7 +11,7 @@
 
     public class AdminCommentsController : AdminController
     {
-        private const int ItemsPerPage = 4;
+        private const int ItemsPerPage = 6;
 
         private ICommentService comments;
 
