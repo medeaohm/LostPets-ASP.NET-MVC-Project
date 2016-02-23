@@ -115,7 +115,12 @@
         }
 
         [HttpGet]
-        public ActionResult All(PostType? postType = null, PetType? petType = null, City? city = null, int id = 1)
+        public ActionResult All(
+            PostType? postType = null,
+            PetType? petType = null,
+            City? city = null,
+            string orderBy = null,
+            int id = 1)
         {
             PageableListPostViewModel viewModel;
 
@@ -140,8 +145,24 @@
                 queryPosts = queryPosts.Where(p => p.Location.City == city);
             }
 
-            queryPosts = queryPosts.OrderBy(x => x.CreatedOn)
-                .ThenBy(x => x.Id)
+            if (orderBy != null)
+            {
+                switch (orderBy.ToString())
+                {
+                    case "1":
+                        queryPosts = queryPosts.OrderBy(p => p.Title);
+                        break;
+                    case "2":
+                        queryPosts = queryPosts.OrderBy(p => p.Author.UserName);
+                        break;
+
+                    default:
+                        queryPosts = queryPosts.OrderBy(x => x.CreatedOn).ThenBy(x => x.Id);
+                        break;
+                }
+            }
+
+            queryPosts = queryPosts
                 .Skip(itemsToSkip)
                 .Take(ItemsPerPage);
 
@@ -154,7 +175,8 @@
                 PostType = postType,
                 PetType = petType,
                 City = city,
-                Posts = posts
+                Posts = posts,
+                OrderBy = orderBy
             };
 
             return this.View(viewModel);

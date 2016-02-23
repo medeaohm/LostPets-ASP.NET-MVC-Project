@@ -48,7 +48,8 @@
 
             var users = queryUsers.To<AdminUserViewModel>().ToList();
 
-            viewModel = new AdminPageableListUserViewModel() {
+            viewModel = new AdminPageableListUserViewModel()
+            {
                 CurrentPage = page,
                 TotalPages = totalPages,
                 Users = users

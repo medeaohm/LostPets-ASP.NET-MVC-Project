@@ -16,6 +16,8 @@
 
         public City? City { get; set; }
 
+        public string OrderBy { get; set; }
+
         public IEnumerable<PostViewModel> Posts { get; set; }
     }
 }
