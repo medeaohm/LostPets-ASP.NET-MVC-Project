@@ -1,30 +1,43 @@
-﻿@model LostPets.Web.ViewModels.Posts.PostViewModel
+﻿@using LostPets.Data.Models.Types
+
+@model LostPets.Web.ViewModels.Posts.PostViewModel
 @{
     ViewBag.Title = "_PostPartial";
 }
-<div class="row">
-    <div class="col-md-2 text-center">
-        @Model.Title
-    </div>
-    <div class="col-md-1 text-center">
+
+@if (Model.PostType == PostType.Lost)
+{
+    @Html.Raw("<tr class=\"danger\">")
+}
+else
+{
+    @Html.Raw("<tr class=\"info\">")
+}
+    <td>
         @if (@Model.Photo != null)
         {
-            <img src="@Url.Action("Image", "Posts", new { id = Model.Photo.Id })" alt="@Model.Title" class="img-responsive" width="50" />
+            <img src="@Url.Action("Image", "Posts", new { id = Model.Photo.Id })" alt="@Model.Title" class="img-responsive" width="70" />
         }
-    </div>
-    <div class="col-md-1 text-center">
+        else
+        {
+            <img src="http://europeandemocracy.eu/wp-content/themes/groovy1/inc/img/no_image.jpg" alt="@Model.Title" class="img-responsive" width="70" />
+        }
+    </td>
+    <td>
+        <a href="@Model.Url" class="panel-title text-center">@Model.Title</a>
+    </td>
+    <td>
         @Model.PostType
-    </div>
-    <div class="col-md-1 text-center">
+    </td>
+    <td>
         @Model.Pet.PetType
-    </div>
-    <div class="col-md-2 text-center">
+    </td>
+    <td>
         @Model.Location.City
-    </div>
-    <div class="col-md-2 text-center">
-        @Model.Author.UserName
-    </div> 
-</div>
-<br />
+    </td>
+    <td>
+        <a href="@Model.UserUrl">@Model.Author.UserName </a>
+    </td>
+</tr>
 
 

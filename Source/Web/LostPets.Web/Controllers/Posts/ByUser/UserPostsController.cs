@@ -72,6 +72,9 @@
             {
                 CurrentPage = page,
                 TotalPages = totalPages,
+                PostType = postType,
+                PetType = petType,
+                City = city,
                 Posts = posts
             };
 

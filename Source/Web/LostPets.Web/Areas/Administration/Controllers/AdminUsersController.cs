@@ -39,7 +39,7 @@
             var allItemsCount = this.posts.GetAll().Count();
             var totalPages = (int)Math.Ceiling(allItemsCount / (decimal)ItemsPerPage);
             var itemsToSkip = (page - 1) * ItemsPerPage;
-            var queryUsers = this.users
+            var queryUsers = this.Users
                 .GetAll()
                 .OrderBy(x => x.CreatedOn)
                 .ThenBy(x => x.Id)
@@ -66,7 +66,7 @@
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
 
-            var user = this.users.GetById(id);
+            var user = this.Users.GetById(id);
             if (user == null)
             {
                 return this.HttpNotFound();
@@ -80,8 +80,8 @@
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(string id)
         {
-            this.users.Delete(id);
-            this.users.Update();
+            this.Users.Delete(id);
+            this.Users.Update();
             this.TempData["Notification"] = "User Deleted Succesfully!";
             return this.RedirectToAction("All");
         }

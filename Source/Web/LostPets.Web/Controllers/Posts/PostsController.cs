@@ -118,49 +118,44 @@
         public ActionResult All(PostType? postType = null, PetType? petType = null, City? city = null, int id = 1)
         {
             PageableListPostViewModel viewModel;
-            if (this.HttpContext.Cache["Post page_" + id] != null)
+
+            var page = id;
+            var allItemsCount = this.posts.GetAll().Count();
+            var totalPages = (int)Math.Ceiling(allItemsCount / (decimal)ItemsPerPage);
+            var itemsToSkip = (page - 1) * ItemsPerPage;
+            var queryPosts = this.posts.GetAll();
+
+            if (postType != null)
             {
-                viewModel = (PageableListPostViewModel)this.HttpContext.Cache["Post page_" + id];
+                queryPosts = queryPosts.Where(p => p.PostType == postType);
             }
-            else
+
+            if (petType != null)
             {
-                var page = id;
-                var allItemsCount = this.posts.GetAll().Count();
-                var totalPages = (int)Math.Ceiling(allItemsCount / (decimal)ItemsPerPage);
-                var itemsToSkip = (page - 1) * ItemsPerPage;
-                var queryPosts = this.posts.GetAll();
-
-                if (postType != null)
-                {
-                    queryPosts = queryPosts.Where(p => p.PostType == postType);
-                }
-
-                if (petType != null)
-                {
-                    queryPosts = queryPosts.Where(p => p.Pet.PetType == petType);
-                }
-
-                if (city != null)
-                {
-                    queryPosts = queryPosts.Where(p => p.Location.City == city);
-                }
-
-                queryPosts = queryPosts.OrderBy(x => x.CreatedOn)
-                    .ThenBy(x => x.Id)
-                    .Skip(itemsToSkip)
-                    .Take(ItemsPerPage);
-
-                var posts = queryPosts.To<PostViewModel>().ToList();
-
-                viewModel = new PageableListPostViewModel()
-                {
-                    CurrentPage = page,
-                    TotalPages = totalPages,
-                    Posts = posts
-                };
-
-                this.HttpContext.Cache["Post page_" + id] = viewModel;
+                queryPosts = queryPosts.Where(p => p.Pet.PetType == petType);
             }
+
+            if (city != null)
+            {
+                queryPosts = queryPosts.Where(p => p.Location.City == city);
+            }
+
+            queryPosts = queryPosts.OrderBy(x => x.CreatedOn)
+                .ThenBy(x => x.Id)
+                .Skip(itemsToSkip)
+                .Take(ItemsPerPage);
+
+            var posts = queryPosts.To<PostViewModel>().ToList();
+
+            viewModel = new PageableListPostViewModel()
+            {
+                CurrentPage = page,
+                TotalPages = totalPages,
+                PostType = postType,
+                PetType = petType,
+                City = city,
+                Posts = posts
+            };
 
             return this.View(viewModel);
         }

@@ -14,11 +14,24 @@
 
     public abstract class BaseController : Controller
     {
-        protected IUserService users;
+        private IUserService users;
 
         public BaseController(IUserService users)
         {
             this.users = users;
+        }
+
+        public IUserService Users
+        {
+            get
+            {
+                return this.users;
+            }
+
+            set
+            {
+                this.users = value;
+            }
         }
 
         public ICacheService Cache { get; set; }

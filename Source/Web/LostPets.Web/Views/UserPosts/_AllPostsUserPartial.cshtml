@@ -1,34 +1,47 @@
-﻿@model LostPets.Web.ViewModels.Posts.PostViewModel
+﻿@using LostPets.Data.Models.Types
+@model LostPets.Web.ViewModels.Posts.PostViewModel
 @{
-    ViewBag.Title = "_PostPartial";
+    ViewBag.Title = "_AllPostUserPartial";
 }
-<div class="row">
-    <div class="col-md-2 text-center">
-        @Model.Title
-    </div>
-    <div class="col-md-1 text-center">
-        @if (@Model.Photo != null)
-        {
-            <img src="@Url.Action("Image", "Posts", new { id = Model.Photo.Id })" alt="@Model.Title" class="img-responsive" width="50" />
-        }
-    </div>
-    <div class="col-md-1 text-center">
-        @Model.PostType
-    </div>
-    <div class="col-md-1 text-center">
-        @Model.Pet.PetType
-    </div>
-    <div class="col-md-2 text-center">
-        @Model.Location.City
-    </div>
-    <div class="col-md-2 text-center">
-        @Model.Author.UserName
-    </div> 
-    <div class="col-md-2">
-        @Html.ActionLink("Edit", "EditPost", new { id = Model.Id }) |
-        @Html.ActionLink("Delete", "DeletePost", new { id = Model.Id })
-    </div>
-</div>
-<br />
+
+@if (Model.PostType == PostType.Lost)
+{
+    @Html.Raw("<tr class=\"danger\">")
+}
+else
+{
+    @Html.Raw("<tr class=\"info\">")
+}
+<td>
+    @if (@Model.Photo != null)
+    {
+        <img src="@Url.Action("Image", "Posts", new { id = Model.Photo.Id })" alt="@Model.Title" class="img-responsive" width="70" />
+    }
+    else
+    {
+        <img src="http://europeandemocracy.eu/wp-content/themes/groovy1/inc/img/no_image.jpg" alt="@Model.Title" class="img-responsive" width="70" />
+    }
+</td>
+<td>
+    <a href="@Model.Url" class="panel-title text-center">@Model.Title</a>
+</td>
+<td>
+    @Model.PostType
+</td>
+<td>
+    @Model.Pet.PetType
+</td>
+<td>
+    @Model.Location.City
+</td>
+<td>
+    <a href="@Model.UserUrl">@Model.Author.UserName </a>
+</td>
+<td>
+    @Html.ActionLink("Edit", "EditPost", new { id = Model.Id }, new {@class = "btn btn-xs btn-default" })
+    @Html.ActionLink("Delete", "DeletePost", new { id = Model.Id }, new { @class = "btn btn-xs btn-danger" })
+</td>
+</tr>
+
 
 

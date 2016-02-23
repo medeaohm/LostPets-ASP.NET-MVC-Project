@@ -5,8 +5,8 @@
 
     using Data.Models;
     using Services.Data;
-    using ViewModels.Comments;
     using Services.Web;
+    using ViewModels.Comments;
 
     public class CommentsController : BaseController
     {
@@ -56,13 +56,12 @@
 
                 var viewModel = this.Mapper.Map<CommentViewModel>(databaseComment);
                 return this.PartialView("_CommentPartial", viewModel);
-
-                // return this.RedirectToAction("Details", "Posts");
             }
 
             throw new HttpException(400, "Invalid comment!");
         }
 
+        [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Delete(int id)

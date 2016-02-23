@@ -20,19 +20,19 @@
 
         public ActionResult ViewMyProfile()
         {
-            var user = this.Mapper.Map<ProfileViewModel>(this.users.GetById(this.CurrentUser.Id));
+            var user = this.Mapper.Map<ProfileViewModel>(this.Users.GetById(this.CurrentUser.Id));
             return this.View(user);
         }
 
         public ActionResult ViewUserProfile(string id)
         {
-            var user = this.Mapper.Map<ProfileViewModel>(this.users.GetById(id));
+            var user = this.Mapper.Map<ProfileViewModel>(this.Users.GetById(id));
             return this.View(user);
         }
 
         public ActionResult EditProfile(string id)
         {
-            var user = this.Mapper.Map<EditProfileViewModel>(this.users.GetById(this.CurrentUser.Id));
+            var user = this.Mapper.Map<EditProfileViewModel>(this.Users.GetById(this.CurrentUser.Id));
             return this.View(user);
         }
 
@@ -41,7 +41,7 @@
         [ValidateAntiForgeryToken]
         public ActionResult EditProfile(EditProfileViewModel profile, string id)
         {
-            var user = this.users.GetById(this.CurrentUser.Id);
+            var user = this.Users.GetById(this.CurrentUser.Id);
 
             user.FirstName = profile.FirstName;
             user.LastName = profile.LastName;
@@ -66,7 +66,7 @@
                 }
             }
 
-            this.users.Update();
+            this.Users.Update();
 
             this.TempData["Notification"] = "Profile Updeted Succesfully!";
             return this.RedirectToAction("ViewMyProfile");

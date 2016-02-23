@@ -5,10 +5,10 @@
     ViewBag.Title = "Home Page";
 }
 <div class="container">
-    <h1 class="text-center"> All Posts</h1>
+    <h1 class="col-lg-12 well text-center">All Posts</h1>
     @using (Html.BeginForm("All", "Posts", FormMethod.Get, new { @class = "form", enctype = "multipart/form-data" }))
     {
-        <div class="row">
+        <div class="row col-lg-12 text-center">
             <div class="col-md-3">
                 <div class="row">
                     @Html.LabelFor(m => m.PostType)
@@ -41,44 +41,41 @@
             </div>
         </div>
     }
-    <br />
     <div class="row">
-        <div class="col-md-2 text-center">
-            Title
-        </div>
-        <div class="col-md-1 text-center">
-            Photo
-        </div>
-        <div class="col-md-1 text-center">
-            Post Type
-        </div> 
-        <div class="col-md-1 text-center">
-            Animal Type
-        </div> 
-        <div class="col-md-2 text-center">
-            City
-        </div>    
-        <div class="col-md-2 text-center">
-            Posted by
-        </div> 
+        <br />
+        <br />
     </div>
-    <br />
     <div class="row">
-        @foreach (var post in Model.Posts)
-        {
-            @Html.Partial("_AllPostPartial", post)
-        }
-    </div>  
+        <table class="table table-striped table-hover ">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Title</th>
+                    <th>Post Type</th>
+                    <th>Animal Type</th>
+                    <th>City</th>
+                    <th>Posted by</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var post in Model.Posts)
+                {
+                    @Html.Partial("_AllPostPartial", post)
+                }
+            </tbody>
+        </table>
+    </div>
+
     <div class="row text-center">
         <nav>
             <ul class="pagination">
                 @if (Model.CurrentPage > 1)
                 {
-                    <li>
-                        <a href="/Posts/All/@(Model.CurrentPage - 1)" aria-label="Previous">
-                            <span aria-hidden="true">&laquo;</span>
-                        </a>
-                    </li>
+                <li>
+                    <a href="/Posts/All/@(Model.CurrentPage - 1)?PostType=@Model.PostType&PetType=@Model.PetType&City=@Model.City" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
                 }
                 @for (int i = 1; i < Model.TotalPages; i++)
                 {
@@ -87,13 +84,13 @@
                     {
                         className = "active";
                     }
-                    <li class="@className"><a href="/Posts/All/@i">@i</a></li>
-                }
+                    <li class="@className"><a href="/Posts/All/@i?PostType=@Model.PostType&PetType=@Model.PetType&City=@Model.City">@i</a></li>
+                    }
 
-                @if (Model.CurrentPage < Model.TotalPages)
-                {
+                        @if (Model.CurrentPage < Model.TotalPages)
+                    {
                     <li>
-                        <a href="/Posts/All/@(Model.CurrentPage+1)" aria-label="Next">
+                        <a href="/Posts/All/@(Model.CurrentPage+1)?PostType=@Model.PostType&PetType=@Model.PetType&City=@Model.City" aria-label="Next">
                             <span aria-hidden="true">&raquo;</span>
                         </a>
                     </li>
