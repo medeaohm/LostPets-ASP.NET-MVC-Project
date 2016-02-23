@@ -39,6 +39,18 @@ Additionally, registered user have access to several other part of the applicati
 - **Comment** posts (as well as they are able to delete their own comments)
     ![alt tag](https://github.com/medeaohm/LostPets-ASP.NET-MVC-Project/blob/master/images/Comment-RegisteredUsers.jpg)
 
--**View and Modify their profile** - of course, they can also view the profiles of the other users
+- **View and Modify their profile** - of course, they can also view the profiles of the other users
     ![alt tag](https://github.com/medeaohm/LostPets-ASP.NET-MVC-Project/blob/master/images/ViewMyProfile-RegisteredUsers.jpg)
     ![alt tag](https://github.com/medeaohm/LostPets-ASP.NET-MVC-Project/blob/master/images/EditMyProfile-RegisteredUsers.jpg)
+    
+
+### Administration Part
+The administrator of the page is allowed to:
+- **Edit/Delete posts**
+    ![alt tag](https://github.com/medeaohm/LostPets-ASP.NET-MVC-Project/blob/master/images/Posts-Admin.jpg)
+
+- **Edit/Delete comments**
+    ![alt tag](https://github.com/medeaohm/LostPets-ASP.NET-MVC-Project/blob/master/images/Comments-Admin.jpg)
+
+- **Delete comments**
+    ![alt tag](https://github.com/medeaohm/LostPets-ASP.NET-MVC-Project/blob/master/images/Users-Admin.jpg)
