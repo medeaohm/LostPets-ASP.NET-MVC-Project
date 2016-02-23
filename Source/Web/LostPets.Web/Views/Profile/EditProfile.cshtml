@@ -8,11 +8,12 @@
 {
     @Html.AntiForgeryToken()
     <div class="container" style="position:center">
-        <h1 class="col-lg-12 well">Edit Profile</h1>
+        <h1 class="col-lg-12 well text-center text-success">Edit Profile</h1>
         <div class="col-lg-12 well" style="padding-left:5em; padding-right:-5em;">
             <div class="row">
                 <form>
-                    <div class="col-md-3 col-lg-3 " align="center">
+                    <div class="col-md-3 col-lg-3">
+                        <br />
                         @if (@Model.ProfilePictureId != null)
                         {
                             <img src="@Url.Action("Image", "Profile", new { id = Model.ProfilePictureId.Value })" alt="@Model.UserName" class="img-circle img-responsive" />
@@ -34,7 +35,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-8">
+                    <div class="col-sm-9">
                         <div class="row">
                             @Html.EditorFor(m => m.UserName)
                             @Html.EditorFor(m => m.Email)
@@ -57,7 +58,8 @@
                             @Html.EditorFor(m => m.PhoneNumber)
                             @Html.EditorFor(m => m.FacebookProfile)
                         </div>
-                        <div class="pull-left">
+                        <div>
+                            <br />
                             <input type="submit" class="btn btn-lg btn-success" value="Update Profile" />
                         </div>
                     </div>

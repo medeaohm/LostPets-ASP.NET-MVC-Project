@@ -1,7 +1,7 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
-    background-image: url('c:\users\adrian\desktop\lostpets-asp.net-mvc-project\source\data\lostpets.data\migrations\imgs\collage.jpg');
+    background-image: url('http://www.comparestoreprices.co.uk/images/ot/other-wilko-embossed-wallpaper-white-16276.jpg');
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -17,9 +17,9 @@
     white-space: normal;
 }
 
-/* Set width on the form input elements since they're 100% wide by default */
-/*input,
+/* Set width on the form input elements since they're 100% wide by default  */ 
+input,
 select,
 textarea {
-    max-width: 280px;
-}*/
+    max-width: 80%;
+}

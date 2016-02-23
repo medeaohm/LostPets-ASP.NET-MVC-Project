@@ -51,13 +51,13 @@
     <div class="container body-content">
         @if (this.TempData["Notification"] != null)
         {
-            <div class="alert alert-success" role="alert">
+            <div class="alert alert-success text-center" role="alert">
                 @this.TempData["Notification"]
             </div>
         }
         @RenderBody()
         <hr />
-        <footer>
+        <footer class="text-center">
             <p>&copy; @DateTime.Now.Year - Lost Pets</p>
         </footer>
     </div>

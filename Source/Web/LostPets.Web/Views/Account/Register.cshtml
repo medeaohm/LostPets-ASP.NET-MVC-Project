@@ -8,8 +8,8 @@
     @Html.AntiForgeryToken()
 
     <div class="container" style="position:center">
-        <h1 class="col-lg-8 well">Register</h1>
-        <div class="col-lg-8 well" style="padding-left:5em; padding-right:-5em;">
+        <h1 class="col-lg-8 well text-center">Register</h1>
+        <div class="col-lg-8 well" style="padding-left:5em; ">
             <div class="row">
                 <form>
                     <div class="col-sm-12">
@@ -39,7 +39,7 @@
                             @Html.EditorFor(m => m.Password)
                             @Html.EditorFor(m => m.ConfirmPassword)
                         </div>
-                        <div class="pull-left">
+                        <div>
                             <input type="submit" class="btn btn-lg btn-success" value="Register" />
                         </div>                     
                     </div>
