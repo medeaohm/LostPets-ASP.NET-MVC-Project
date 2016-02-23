@@ -6,6 +6,7 @@
     using Data.Models;
     using Data.Models.Types;
     using Infrastructure.Mapping;
+    using Services.Web;
 
     public class AdminPostViewModel : IMapFrom<Post>, IHaveCustomMappings
     {
@@ -24,6 +25,23 @@
         public User Author { get; set; }
 
         public Location Location { get; set; }
+
+        public string Url
+        {
+            get
+            {
+                IIdentifierProvider identifier = new IdentifierProvider();
+                return $"/Posts/Details/{identifier.EncodeId(this.Id)}";
+            }
+        }
+
+        public string UserUrl
+        {
+            get
+            {
+                return $"/Profile/ViewUserProfile/{this.Author.Id}";
+            }
+        }
 
         public void CreateMappings(IMapperConfiguration configuration)
         {

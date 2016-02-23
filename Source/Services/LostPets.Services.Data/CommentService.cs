@@ -31,7 +31,7 @@
 
         public IQueryable<Comment> GetAll()
         {
-            return this.comments.All().OrderBy(c => c.CreatedOn).ThenBy(c => c.Id);
+            return this.comments.All().OrderBy(c => c.PostId).ThenBy(c => c.CreatedOn);
         }
 
         public IQueryable<Comment> GetByPostId(int postId)
