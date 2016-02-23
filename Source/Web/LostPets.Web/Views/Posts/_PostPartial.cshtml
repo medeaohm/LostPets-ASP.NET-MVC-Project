@@ -76,7 +76,14 @@
         <div class="panel-footer">
             <div class="row" style="padding-left:5em; padding-right:5em">
                 <p class="pull-left">
-                    <i style="color:darkslategrey">   Posted by: <a href="@Model.UserUrl">@Model.Author.UserName </a></i>
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <i style="color:darkslategrey">   Posted by: <a href="@Model.UserUrl">@Model.Author.UserName </a></i>
+                    }
+                    else
+                    {
+                        <i style="color:darkslategrey">   Posted by: @Model.Author.UserName</i>
+                    }
                 </p>
                 <p class="pull-right">
                     <i style="color:darkslategrey">

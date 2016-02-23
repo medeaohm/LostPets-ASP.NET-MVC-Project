@@ -1,6 +1,7 @@
 ﻿namespace LostPets.Web.ViewModels.Posts
 {
     using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
     using System.Linq;
 
     using AutoMapper;
@@ -14,8 +15,12 @@
     {
         public int Id { get; set;  }
 
+        [Required]
+        [StringLength(100, MinimumLength = 5)]
         public string Title { get; set; }
 
+        [Required]
+        [StringLength(500)]
         public string Content { get; set; }
 
         public Photo Photo { get; set; }

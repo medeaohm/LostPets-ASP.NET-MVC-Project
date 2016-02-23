@@ -10,7 +10,7 @@
     @using (Html.BeginForm("All", "Posts", FormMethod.Get, new { @class = "form", enctype = "multipart/form-data" }))
     {
         <div class="row col-lg-12 text-center">
-            <div class="col-md-3">
+            <div class="col-md-2">
                 <div class="row">
                     @Html.LabelFor(m => m.OrderBy)
                 </div>
@@ -31,12 +31,12 @@
                     @Html.DropDownListFor(m => m.PostType, EnumHelper.GetSelectList(typeof(PostType)), "Select Post Type", new { @class = "form-control" })
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-2">
                 <div class="row">
                     @Html.LabelFor(m => m.PetType)
                 </div>
                 <div class="row">
-                    @Html.DropDownListFor(m => m.PetType, EnumHelper.GetSelectList(typeof(PetType)), "Select Pet Type", new { @class = "form-control" })
+                    @Html.DropDownListFor(m => m.PetType, EnumHelper.GetSelectList(typeof(PetType)), "Select Pet", new { @class = "form-control" })
                 </div>
             </div>
             <div class="col-md-3">
@@ -47,7 +47,7 @@
                     @Html.DropDownListFor(m => m.City, EnumHelper.GetSelectList(typeof(City)), "Select City", new { @class = "form-control" })
                 </div>
             </div>
-            <div class="col-md-3 pull-right">
+            <div class="col-md-2 pull-right">
                 <br />
                 <div class="text-center">
                     <input type="submit" value="Find" class="btn btn-primary" />

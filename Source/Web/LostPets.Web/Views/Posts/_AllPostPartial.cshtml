@@ -5,14 +5,13 @@
     ViewBag.Title = "_PostPartial";
 }
 
+@{ var className = "info"; }
 @if (Model.PostType == PostType.Lost)
 {
-    @Html.Raw("<tr class=\"danger\">")
+    className = "danger";
 }
-else
-{
-    @Html.Raw("<tr class=\"info\">")
-}
+
+<tr class="@className">
     <td>
         @if (@Model.Photo != null)
         {
@@ -36,7 +35,14 @@ else
         @Model.Location.City
     </td>
     <td>
-        <a href="@Model.UserUrl">@Model.Author.UserName </a>
+        @if (User.Identity.IsAuthenticated)
+        {
+            <a href="@Model.UserUrl">@Model.Author.UserName </a>
+        }
+        else
+        {
+            @Model.Author.UserName
+        }
     </td>
 </tr>
 
