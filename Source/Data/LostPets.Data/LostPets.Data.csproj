@@ -98,6 +98,7 @@
     <Content Include="Migrations\imgs\bird1.jpg" />
     <Content Include="Migrations\imgs\bird2.jpg" />
     <Content Include="Migrations\imgs\cat1.jpg" />
+    <Content Include="Migrations\imgs\collage.jpg" />
     <Content Include="Migrations\imgs\defaultavatar.jpe" />
     <Content Include="Migrations\imgs\dog1.jpg" />
     <Content Include="Migrations\imgs\dog2.jpg" />

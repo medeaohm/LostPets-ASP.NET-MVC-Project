@@ -37,7 +37,7 @@
         {
             get
             {
-                return this.Comments.OrderByDescending(c => c.CreatedOn).ToList();
+                return this.Comments.OrderByDescending(c => c.CreatedOn).Where(c => c.IsDeleted == false).ToList();
             }
         }
 

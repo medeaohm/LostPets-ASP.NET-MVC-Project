@@ -6,9 +6,11 @@
     using Data.Models;
     using Services.Data;
     using ViewModels.Comments;
+    using Services.Web;
 
     public class CommentsController : BaseController
     {
+        private IIdentifierProvider identifierProvider;
         private IPostService posts;
         private ICommentService comments;
 
@@ -17,6 +19,8 @@
         {
             this.posts = posts;
             this.comments = comments;
+
+            this.identifierProvider = new IdentifierProvider();
         }
 
         [Authorize]
@@ -57,6 +61,18 @@
             }
 
             throw new HttpException(400, "Invalid comment!");
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Delete(int id)
+        {
+            var postId = this.identifierProvider.EncodeId(this.comments.GetById(id).PostId);
+
+            this.comments.Delete(id);
+            this.comments.Update();
+            this.TempData["Notification"] = "Comment Deleted Succesfully!";
+            return this.RedirectToAction("Details", "Posts", new { Id = postId });
         }
     }
 }

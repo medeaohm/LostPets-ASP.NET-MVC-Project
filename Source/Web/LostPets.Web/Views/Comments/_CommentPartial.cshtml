@@ -5,7 +5,7 @@
         <div>
             @if (@Model.Author.ProfilePicture != null)
             {
-                <img src="@Url.Action("Image", "Posts", new { id = Model.Author.ProfilePicture.Id })" alt="@Model.Author.UserName" class="img-circle img-responsive" width="70" />
+                <img src="@Url.Action("Image", "Posts", new { id = Model.Author.ProfilePicture.Id })" alt="@Model.Author.UserName" class="img-circle img-responsive pull-right" width="70" />
             }
             else
             {
@@ -13,16 +13,38 @@
             }
         </div>
     </div>
-
-    <div class="col-sm-10 small">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <strong>@Model.Author.UserName</strong> <span class="text-muted">commented on @Model.CreatedOn.Day/@Model.CreatedOn.Month/@Model.CreatedOn.Year</span>
+    @if (Model.Author.UserName == User.Identity.Name)
+    {
+        using (Html.BeginForm("Delete", "Comments", new { id = Model.Id }, FormMethod.Post))
+        {
+            <div class="col-sm-10 small">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        @Html.AntiForgeryToken()
+                        <strong>@Model.Author.UserName</strong> <span class="text-muted">commented on @Model.CreatedOn.Day/@Model.CreatedOn.Month/@Model.CreatedOn.Year</span>
+                        <input type="submit" value="Delete Comment" class="btn btn-sm btn-danger pull-right" />
+                        <br />
+                        <br />
+                    </div>
+                    <div class="panel-body">
+                        @Model.Content
+                    </div>
+                </div>
             </div>
-            <div class="panel-body">
-                @Model.Content
+        }
+    }
+    else
+    {
+        <div class="col-sm-10 small">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <strong>@Model.Author.UserName</strong> <span class="text-muted">commented on @Model.CreatedOn.Day/@Model.CreatedOn.Month/@Model.CreatedOn.Year</span>
+                </div>
+                <div class="panel-body">
+                    @Model.Content
+                </div>
             </div>
         </div>
-    </div>
+    }
 </div>
 
