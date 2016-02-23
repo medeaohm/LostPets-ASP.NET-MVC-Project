@@ -98,6 +98,9 @@
   <project key="58889708">
     <configuration>DEBUG;TRACE</configuration>
   </project>
+  <project key="380955253">
+    <configuration>TRACE</configuration>
+  </project>
   <sourcecode name="BaseModel{TKey}.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015/10/13 22:30:19.705</styleCop>

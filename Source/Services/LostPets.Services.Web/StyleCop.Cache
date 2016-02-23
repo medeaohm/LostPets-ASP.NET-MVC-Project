@@ -3,6 +3,9 @@
   <project key="1962113660">
     <configuration>DEBUG;TRACE</configuration>
   </project>
+  <project key="-330861270">
+    <configuration>TRACE</configuration>
+  </project>
   <sourcecode name="HttpCacheService.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015/10/13 22:30:19.705</styleCop>

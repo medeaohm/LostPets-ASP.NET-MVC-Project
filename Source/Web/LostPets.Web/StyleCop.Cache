@@ -99,10 +99,13 @@
   <project key="515737171">
     <configuration>DEBUG;TRACE</configuration>
   </project>
+  <project key="-1594624133">
+    <configuration>TRACE</configuration>
+  </project>
   <sourcecode name="ApplicationSignInManager.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015/10/13 22:30:19.705</styleCop>
-      <settingsFile>2016/02/22 00:30:04.203</settingsFile>
+      <settingsFile>2016/02/24 01:39:47.487</settingsFile>
       <sourceFile>2016/02/21 21:50:58.989</sourceFile>
       <parser>2015/10/13 22:30:19.705</parser>
       <StyleCop.CSharp.DocumentationRules>2015/10/13 22:30:19.705</StyleCop.CSharp.DocumentationRules>
@@ -125,7 +128,7 @@
   <sourcecode name="ApplicationUserManager.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015/10/13 22:30:19.705</styleCop>
-      <settingsFile>2016/02/22 00:30:04.203</settingsFile>
+      <settingsFile>2016/02/24 01:39:47.487</settingsFile>
       <sourceFile>2016/02/21 21:51:13.400</sourceFile>
       <parser>2015/10/13 22:30:19.705</parser>
       <StyleCop.CSharp.DocumentationRules>2015/10/13 22:30:19.705</StyleCop.CSharp.DocumentationRules>
@@ -148,7 +151,7 @@
   <sourcecode name="AutofacConfig.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015/10/13 22:30:19.705</styleCop>
-      <settingsFile>2016/02/22 00:30:04.203</settingsFile>
+      <settingsFile>2016/02/24 01:39:47.487</settingsFile>
       <sourceFile>2016/02/21 21:52:16.243</sourceFile>
       <parser>2015/10/13 22:30:19.705</parser>
       <StyleCop.CSharp.DocumentationRules>2015/10/13 22:30:19.705</StyleCop.CSharp.DocumentationRules>
@@ -171,7 +174,7 @@
   <sourcecode name="BundleConfig.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015/10/13 22:30:19.705</styleCop>
-      <settingsFile>2016/02/22 00:30:04.203</settingsFile>
+      <settingsFile>2016/02/24 01:39:47.487</settingsFile>
       <sourceFile>2016/02/19 00:32:02.964</sourceFile>
       <parser>2015/10/13 22:30:19.705</parser>
       <StyleCop.CSharp.DocumentationRules>2015/10/13 22:30:19.705</StyleCop.CSharp.DocumentationRules>
@@ -194,7 +197,7 @@
   <sourcecode name="EmailService.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015/10/13 22:30:19.705</styleCop>
-      <settingsFile>2016/02/22 00:30:04.203</settingsFile>
+      <settingsFile>2016/02/24 01:39:47.487</settingsFile>
       <sourceFile>2016/02/11 20:51:01.903</sourceFile>
       <parser>2015/10/13 22:30:19.705</parser>
       <StyleCop.CSharp.DocumentationRules>2015/10/13 22:30:19.705</StyleCop.CSharp.DocumentationRules>
@@ -217,7 +220,7 @@
   <sourcecode name="FilterConfig.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015/10/13 22:30:19.705</styleCop>
-      <settingsFile>2016/02/22 00:30:04.203</settingsFile>
+      <settingsFile>2016/02/24 01:39:47.487</settingsFile>
       <sourceFile>2016/02/11 20:51:01.908</sourceFile>
       <parser>2015/10/13 22:30:19.705</parser>
       <StyleCop.CSharp.DocumentationRules>2015/10/13 22:30:19.705</StyleCop.CSharp.DocumentationRules>
@@ -240,8 +243,8 @@
   <sourcecode name="GlimpseSecurityPolicy.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015/10/13 22:30:19.705</styleCop>
-      <settingsFile>2016/02/22 00:30:04.203</settingsFile>
-      <sourceFile>2016/02/22 00:29:06.471</sourceFile>
+      <settingsFile>2016/02/24 01:39:47.487</settingsFile>
+      <sourceFile>2016/02/24 01:40:36.156</sourceFile>
       <parser>2015/10/13 22:30:19.705</parser>
       <StyleCop.CSharp.DocumentationRules>2015/10/13 22:30:19.705</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-396340723</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -269,8 +272,8 @@
   <sourcecode name="RouteConfig.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015/10/13 22:30:19.705</styleCop>
-      <settingsFile>2016/02/22 00:30:04.203</settingsFile>
-      <sourceFile>2016/02/21 19:27:08.661</sourceFile>
+      <settingsFile>2016/02/24 01:39:47.487</settingsFile>
+      <sourceFile>2016/02/24 01:29:54.295</sourceFile>
       <parser>2015/10/13 22:30:19.705</parser>
       <StyleCop.CSharp.DocumentationRules>2015/10/13 22:30:19.705</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-396340723</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -292,7 +295,7 @@
   <sourcecode name="SmsService.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015/10/13 22:30:19.705</styleCop>
-      <settingsFile>2016/02/22 00:30:04.203</settingsFile>
+      <settingsFile>2016/02/24 01:39:47.487</settingsFile>
       <sourceFile>2016/02/11 20:51:01.938</sourceFile>
       <parser>2015/10/13 22:30:19.705</parser>
       <StyleCop.CSharp.DocumentationRules>2015/10/13 22:30:19.705</StyleCop.CSharp.DocumentationRules>
@@ -315,7 +318,7 @@
   <sourcecode name="AdministrationAreaRegistration.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015/10/13 22:30:19.705</styleCop>
-      <settingsFile>2016/02/22 00:30:04.203</settingsFile>
+      <settingsFile>2016/02/24 01:39:47.487</settingsFile>
       <sourceFile>2016/02/21 19:12:11.447</sourceFile>
       <parser>2015/10/13 22:30:19.705</parser>
       <StyleCop.CSharp.DocumentationRules>2015/10/13 22:30:19.705</StyleCop.CSharp.DocumentationRules>
@@ -338,8 +341,8 @@
   <sourcecode name="AdminCommentsController.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015/10/13 22:30:19.705</styleCop>
-      <settingsFile>2016/02/22 00:30:04.203</settingsFile>
-      <sourceFile>2016/02/22 01:11:37.473</sourceFile>
+      <settingsFile>2016/02/24 01:39:47.487</settingsFile>
+      <sourceFile>2016/02/23 14:05:38.615</sourceFile>
       <parser>2015/10/13 22:30:19.705</parser>
       <StyleCop.CSharp.DocumentationRules>2015/10/13 22:30:19.705</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-396340723</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -361,7 +364,7 @@
   <sourcecode name="AdminController.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015/10/13 22:30:19.705</styleCop>
-      <settingsFile>2016/02/22 00:30:04.203</settingsFile>
+      <settingsFile>2016/02/24 01:39:47.487</settingsFile>
       <sourceFile>2016/02/21 21:50:28.749</sourceFile>
       <parser>2015/10/13 22:30:19.705</parser>
       <StyleCop.CSharp.DocumentationRules>2015/10/13 22:30:19.705</StyleCop.CSharp.DocumentationRules>
@@ -384,8 +387,8 @@
   <sourcecode name="AdminPostsController.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015/10/13 22:30:19.705</styleCop>
-      <settingsFile>2016/02/22 00:30:04.203</settingsFile>
-      <sourceFile>2016/02/21 21:15:34.166</sourceFile>
+      <settingsFile>2016/02/24 01:39:47.487</settingsFile>
+      <sourceFile>2016/02/23 15:04:49.154</sourceFile>
       <parser>2015/10/13 22:30:19.705</parser>
       <StyleCop.CSharp.DocumentationRules>2015/10/13 22:30:19.705</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-396340723</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -407,8 +410,8 @@
   <sourcecode name="AdminUsersController.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015/10/13 22:30:19.705</styleCop>
-      <settingsFile>2016/02/22 00:30:04.203</settingsFile>
-      <sourceFile>2016/02/22 01:11:07.763</sourceFile>
+      <settingsFile>2016/02/24 01:39:47.487</settingsFile>
+      <sourceFile>2016/02/23 18:35:08.723</sourceFile>
       <parser>2015/10/13 22:30:19.705</parser>
       <StyleCop.CSharp.DocumentationRules>2015/10/13 22:30:19.705</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-396340723</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -425,30 +428,13 @@
       <StyleCop.CSharp.SpacingRules>2015/10/13 22:30:19.705</StyleCop.CSharp.SpacingRules>
       <StyleCop.CSharp.SpacingRules.FilesHashCode>0</StyleCop.CSharp.SpacingRules.FilesHashCode>
     </timestamps>
-    <violations>
-      <violation namespace="StyleCop.CSharp.LayoutRules" rule="SingleLineCommentMustBePrecededByBlankLine" ruleCheckId="SA1515">
-        <context>A single-line comment must be preceded by a blank line or another single-line comment, or must be the first item in its scope. To ignore this error when commenting out a line of code, begin the comment with '////' rather than '//'.</context>
-        <line>39</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.SpacingRules" rule="SingleLineCommentsMustBeginWithSingleSpace" ruleCheckId="SA1005">
-        <context>The comment must start with a single space. To ignore this error when commenting out a line of code, begin the comment with '////' rather than '//'.</context>
-        <line>39</line>
-        <index>1125</index>
-        <endIndex>1142</endIndex>
-        <startLine>39</startLine>
-        <startColumn>13</startColumn>
-        <endLine>39</endLine>
-        <endColumn>30</endColumn>
-        <warning>False</warning>
-      </violation>
-    </violations>
+    <violations />
   </sourcecode>
   <sourcecode name="AdminCommentViewModel.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015/10/13 22:30:19.705</styleCop>
-      <settingsFile>2016/02/22 00:30:04.203</settingsFile>
-      <sourceFile>2016/02/21 22:54:11.899</sourceFile>
+      <settingsFile>2016/02/24 01:39:47.487</settingsFile>
+      <sourceFile>2016/02/23 14:05:32.125</sourceFile>
       <parser>2015/10/13 22:30:19.705</parser>
       <StyleCop.CSharp.DocumentationRules>2015/10/13 22:30:19.705</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-396340723</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -470,7 +456,7 @@
   <sourcecode name="AdminEditCommentViewModel.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015/10/13 22:30:19.705</styleCop>
-      <settingsFile>2016/02/22 00:30:04.203</settingsFile>
+      <settingsFile>2016/02/24 01:39:47.487</settingsFile>
       <sourceFile>2016/02/21 22:29:18.260</sourceFile>
       <parser>2015/10/13 22:30:19.705</parser>
       <StyleCop.CSharp.DocumentationRules>2015/10/13 22:30:19.705</StyleCop.CSharp.DocumentationRules>
@@ -493,7 +479,7 @@
   <sourcecode name="AdminPageableListCommentViewModel.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015/10/13 22:30:19.705</styleCop>
-      <settingsFile>2016/02/22 00:30:04.203</settingsFile>
+      <settingsFile>2016/02/24 01:39:47.487</settingsFile>
       <sourceFile>2016/02/21 22:40:09.778</sourceFile>
       <parser>2015/10/13 22:30:19.705</parser>
       <StyleCop.CSharp.DocumentationRules>2015/10/13 22:30:19.705</StyleCop.CSharp.DocumentationRules>
@@ -516,7 +502,7 @@
   <sourcecode name="AdminEditPostViewModel.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015/10/13 22:30:19.705</styleCop>
-      <settingsFile>2016/02/22 00:30:04.203</settingsFile>
+      <settingsFile>2016/02/24 01:39:47.487</settingsFile>
       <sourceFile>2016/02/21 13:36:12.352</sourceFile>
       <parser>2015/10/13 22:30:19.705</parser>
       <StyleCop.CSharp.DocumentationRules>2015/10/13 22:30:19.705</StyleCop.CSharp.DocumentationRules>
@@ -539,7 +525,7 @@
   <sourcecode name="AdminPageableListPostViewModel.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015/10/13 22:30:19.705</styleCop>
-      <settingsFile>2016/02/22 00:30:04.203</settingsFile>
+      <settingsFile>2016/02/24 01:39:47.487</settingsFile>
       <sourceFile>2016/02/21 13:36:20.516</sourceFile>
       <parser>2015/10/13 22:30:19.705</parser>
       <StyleCop.CSharp.DocumentationRules>2015/10/13 22:30:19.705</StyleCop.CSharp.DocumentationRules>
@@ -562,8 +548,8 @@
   <sourcecode name="AdminPostViewModel.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015/10/13 22:30:19.705</styleCop>
-      <settingsFile>2016/02/22 00:30:04.203</settingsFile>
-      <sourceFile>2016/02/21 22:35:35.382</sourceFile>
+      <settingsFile>2016/02/24 01:39:47.487</settingsFile>
+      <sourceFile>2016/02/23 13:37:25.458</sourceFile>
       <parser>2015/10/13 22:30:19.705</parser>
       <StyleCop.CSharp.DocumentationRules>2015/10/13 22:30:19.705</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-396340723</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -585,7 +571,7 @@
   <sourcecode name="AdminPageableListUserViewModel.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015/10/13 22:30:19.705</styleCop>
-      <settingsFile>2016/02/22 00:30:04.203</settingsFile>
+      <settingsFile>2016/02/24 01:39:47.487</settingsFile>
       <sourceFile>2016/02/21 23:52:37.301</sourceFile>
       <parser>2015/10/13 22:30:19.705</parser>
       <StyleCop.CSharp.DocumentationRules>2015/10/13 22:30:19.705</StyleCop.CSharp.DocumentationRules>
@@ -608,8 +594,8 @@
   <sourcecode name="AdminUserViewModel.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015/10/13 22:30:19.705</styleCop>
-      <settingsFile>2016/02/22 00:30:04.203</settingsFile>
-      <sourceFile>2016/02/22 00:00:52.380</sourceFile>
+      <settingsFile>2016/02/24 01:39:47.487</settingsFile>
+      <sourceFile>2016/02/23 15:25:37.963</sourceFile>
       <parser>2015/10/13 22:30:19.705</parser>
       <StyleCop.CSharp.DocumentationRules>2015/10/13 22:30:19.705</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-396340723</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -631,8 +617,8 @@
   <sourcecode name="AccountController.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015/10/13 22:30:19.705</styleCop>
-      <settingsFile>2016/02/22 00:30:04.203</settingsFile>
-      <sourceFile>2016/02/22 01:02:55.783</sourceFile>
+      <settingsFile>2016/02/24 01:39:47.487</settingsFile>
+      <sourceFile>2016/02/22 12:42:41.896</sourceFile>
       <parser>2015/10/13 22:30:19.705</parser>
       <StyleCop.CSharp.DocumentationRules>2015/10/13 22:30:19.705</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-396340723</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -652,12 +638,12 @@
     <violations>
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
         <context>The call to XsrfKey must begin with the 'this.', 'base.', 'object.' or 'ChallengeResult.' or 'HttpUnauthorizedResult.' prefix to indicate the intended method call. </context>
-        <line>500</line>
-        <index>18604</index>
-        <endIndex>18610</endIndex>
-        <startLine>500</startLine>
+        <line>502</line>
+        <index>18706</index>
+        <endIndex>18712</endIndex>
+        <startLine>502</startLine>
         <startColumn>43</startColumn>
-        <endLine>500</endLine>
+        <endLine>502</endLine>
         <endColumn>49</endColumn>
         <warning>False</warning>
       </violation>
@@ -666,7 +652,7 @@
   <sourcecode name="ManageController.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015/10/13 22:30:19.705</styleCop>
-      <settingsFile>2016/02/22 00:30:04.203</settingsFile>
+      <settingsFile>2016/02/24 01:39:47.487</settingsFile>
       <sourceFile>2016/02/21 22:00:24.078</sourceFile>
       <parser>2015/10/13 22:30:19.705</parser>
       <StyleCop.CSharp.DocumentationRules>2015/10/13 22:30:19.705</StyleCop.CSharp.DocumentationRules>
@@ -689,8 +675,8 @@
   <sourcecode name="ProfileController.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015/10/13 22:30:19.705</styleCop>
-      <settingsFile>2016/02/22 00:30:04.203</settingsFile>
-      <sourceFile>2016/02/21 02:10:32.258</sourceFile>
+      <settingsFile>2016/02/24 01:39:47.487</settingsFile>
+      <sourceFile>2016/02/23 11:54:08.787</sourceFile>
       <parser>2015/10/13 22:30:19.705</parser>
       <StyleCop.CSharp.DocumentationRules>2015/10/13 22:30:19.705</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-396340723</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -712,8 +698,8 @@
   <sourcecode name="BaseController.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015/10/13 22:30:19.705</styleCop>
-      <settingsFile>2016/02/22 00:30:04.203</settingsFile>
-      <sourceFile>2016/02/21 23:58:16.002</sourceFile>
+      <settingsFile>2016/02/24 01:39:47.487</settingsFile>
+      <sourceFile>2016/02/23 11:53:13.769</sourceFile>
       <parser>2015/10/13 22:30:19.705</parser>
       <StyleCop.CSharp.DocumentationRules>2015/10/13 22:30:19.705</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-396340723</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -735,8 +721,8 @@
   <sourcecode name="CommentsController.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015/10/13 22:30:19.705</styleCop>
-      <settingsFile>2016/02/22 00:30:04.203</settingsFile>
-      <sourceFile>2016/02/21 22:04:58.932</sourceFile>
+      <settingsFile>2016/02/24 01:39:47.487</settingsFile>
+      <sourceFile>2016/02/23 11:51:17.738</sourceFile>
       <parser>2015/10/13 22:30:19.705</parser>
       <StyleCop.CSharp.DocumentationRules>2015/10/13 22:30:19.705</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-396340723</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -758,7 +744,7 @@
   <sourcecode name="HomeController.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015/10/13 22:30:19.705</styleCop>
-      <settingsFile>2016/02/22 00:30:04.203</settingsFile>
+      <settingsFile>2016/02/24 01:39:47.487</settingsFile>
       <sourceFile>2016/02/20 00:07:31.524</sourceFile>
       <parser>2015/10/13 22:30:19.705</parser>
       <StyleCop.CSharp.DocumentationRules>2015/10/13 22:30:19.705</StyleCop.CSharp.DocumentationRules>
@@ -781,8 +767,8 @@
   <sourcecode name="UserPostsController.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015/10/13 22:30:19.705</styleCop>
-      <settingsFile>2016/02/22 00:30:04.203</settingsFile>
-      <sourceFile>2016/02/21 21:54:39.534</sourceFile>
+      <settingsFile>2016/02/24 01:39:47.487</settingsFile>
+      <sourceFile>2016/02/23 12:51:58.846</sourceFile>
       <parser>2015/10/13 22:30:19.705</parser>
       <StyleCop.CSharp.DocumentationRules>2015/10/13 22:30:19.705</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-396340723</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -804,8 +790,8 @@
   <sourcecode name="PostsController.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015/10/13 22:30:19.705</styleCop>
-      <settingsFile>2016/02/22 00:30:04.203</settingsFile>
-      <sourceFile>2016/02/21 02:11:26.853</sourceFile>
+      <settingsFile>2016/02/24 01:39:47.487</settingsFile>
+      <sourceFile>2016/02/23 18:49:11.952</sourceFile>
       <parser>2015/10/13 22:30:19.705</parser>
       <StyleCop.CSharp.DocumentationRules>2015/10/13 22:30:19.705</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-396340723</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -827,7 +813,7 @@
   <sourcecode name="Global.asax.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015/10/13 22:30:19.705</styleCop>
-      <settingsFile>2016/02/22 00:30:04.203</settingsFile>
+      <settingsFile>2016/02/24 01:39:47.487</settingsFile>
       <sourceFile>2016/02/21 19:25:51.252</sourceFile>
       <parser>2015/10/13 22:30:19.705</parser>
       <StyleCop.CSharp.DocumentationRules>2015/10/13 22:30:19.705</StyleCop.CSharp.DocumentationRules>
@@ -850,7 +836,7 @@
   <sourcecode name="AssemblyInfo.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015/10/13 22:30:19.705</styleCop>
-      <settingsFile>2016/02/22 00:30:04.203</settingsFile>
+      <settingsFile>2016/02/24 01:39:47.487</settingsFile>
       <sourceFile>2016/02/11 20:51:02.132</sourceFile>
       <parser>2015/10/13 22:30:19.705</parser>
       <StyleCop.CSharp.DocumentationRules>2015/10/13 22:30:19.705</StyleCop.CSharp.DocumentationRules>
@@ -873,7 +859,7 @@
   <sourcecode name="ExternalLoginConfirmationViewModel.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015/10/13 22:30:19.705</styleCop>
-      <settingsFile>2016/02/22 00:30:04.203</settingsFile>
+      <settingsFile>2016/02/24 01:39:47.487</settingsFile>
       <sourceFile>2016/02/11 20:51:02.391</sourceFile>
       <parser>2015/10/13 22:30:19.705</parser>
       <StyleCop.CSharp.DocumentationRules>2015/10/13 22:30:19.705</StyleCop.CSharp.DocumentationRules>
@@ -896,7 +882,7 @@
   <sourcecode name="ExternalLoginListViewModel.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015/10/13 22:30:19.705</styleCop>
-      <settingsFile>2016/02/22 00:30:04.203</settingsFile>
+      <settingsFile>2016/02/24 01:39:47.487</settingsFile>
       <sourceFile>2016/02/11 20:51:02.398</sourceFile>
       <parser>2015/10/13 22:30:19.705</parser>
       <StyleCop.CSharp.DocumentationRules>2015/10/13 22:30:19.705</StyleCop.CSharp.DocumentationRules>
@@ -919,7 +905,7 @@
   <sourcecode name="ForgotPasswordViewModel.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015/10/13 22:30:19.705</styleCop>
-      <settingsFile>2016/02/22 00:30:04.203</settingsFile>
+      <settingsFile>2016/02/24 01:39:47.487</settingsFile>
       <sourceFile>2016/02/11 20:51:02.412</sourceFile>
       <parser>2015/10/13 22:30:19.705</parser>
       <StyleCop.CSharp.DocumentationRules>2015/10/13 22:30:19.705</StyleCop.CSharp.DocumentationRules>
@@ -942,7 +928,7 @@
   <sourcecode name="ForgotViewModel.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015/10/13 22:30:19.705</styleCop>
-      <settingsFile>2016/02/22 00:30:04.203</settingsFile>
+      <settingsFile>2016/02/24 01:39:47.487</settingsFile>
       <sourceFile>2016/02/11 20:51:02.417</sourceFile>
       <parser>2015/10/13 22:30:19.705</parser>
       <StyleCop.CSharp.DocumentationRules>2015/10/13 22:30:19.705</StyleCop.CSharp.DocumentationRules>
@@ -965,7 +951,7 @@
   <sourcecode name="LoginViewModel.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015/10/13 22:30:19.705</styleCop>
-      <settingsFile>2016/02/22 00:30:04.203</settingsFile>
+      <settingsFile>2016/02/24 01:39:47.487</settingsFile>
       <sourceFile>2016/02/22 01:03:03.593</sourceFile>
       <parser>2015/10/13 22:30:19.705</parser>
       <StyleCop.CSharp.DocumentationRules>2015/10/13 22:30:19.705</StyleCop.CSharp.DocumentationRules>
@@ -988,8 +974,8 @@
   <sourcecode name="RegisterViewModel.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015/10/13 22:30:19.705</styleCop>
-      <settingsFile>2016/02/22 00:30:04.203</settingsFile>
-      <sourceFile>2016/02/21 22:01:43.216</sourceFile>
+      <settingsFile>2016/02/24 01:39:47.487</settingsFile>
+      <sourceFile>2016/02/22 12:42:34.323</sourceFile>
       <parser>2015/10/13 22:30:19.705</parser>
       <StyleCop.CSharp.DocumentationRules>2015/10/13 22:30:19.705</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-396340723</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -1011,7 +997,7 @@
   <sourcecode name="ResetPasswordViewModel.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015/10/13 22:30:19.705</styleCop>
-      <settingsFile>2016/02/22 00:30:04.203</settingsFile>
+      <settingsFile>2016/02/24 01:39:47.487</settingsFile>
       <sourceFile>2016/02/11 20:51:02.435</sourceFile>
       <parser>2015/10/13 22:30:19.705</parser>
       <StyleCop.CSharp.DocumentationRules>2015/10/13 22:30:19.705</StyleCop.CSharp.DocumentationRules>
@@ -1034,7 +1020,7 @@
   <sourcecode name="SendCodeViewModel.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015/10/13 22:30:19.705</styleCop>
-      <settingsFile>2016/02/22 00:30:04.203</settingsFile>
+      <settingsFile>2016/02/24 01:39:47.487</settingsFile>
       <sourceFile>2016/02/11 20:51:02.441</sourceFile>
       <parser>2015/10/13 22:30:19.705</parser>
       <StyleCop.CSharp.DocumentationRules>2015/10/13 22:30:19.705</StyleCop.CSharp.DocumentationRules>
@@ -1057,7 +1043,7 @@
   <sourcecode name="VerifyCodeViewModel.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015/10/13 22:30:19.705</styleCop>
-      <settingsFile>2016/02/22 00:30:04.203</settingsFile>
+      <settingsFile>2016/02/24 01:39:47.487</settingsFile>
       <sourceFile>2016/02/11 20:51:02.447</sourceFile>
       <parser>2015/10/13 22:30:19.705</parser>
       <StyleCop.CSharp.DocumentationRules>2015/10/13 22:30:19.705</StyleCop.CSharp.DocumentationRules>
@@ -1080,8 +1066,8 @@
   <sourcecode name="CommentViewModel.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015/10/13 22:30:19.705</styleCop>
-      <settingsFile>2016/02/22 00:30:04.203</settingsFile>
-      <sourceFile>2016/02/21 22:02:46.833</sourceFile>
+      <settingsFile>2016/02/24 01:39:47.487</settingsFile>
+      <sourceFile>2016/02/23 02:26:22.991</sourceFile>
       <parser>2015/10/13 22:30:19.705</parser>
       <StyleCop.CSharp.DocumentationRules>2015/10/13 22:30:19.705</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-396340723</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -1103,7 +1089,7 @@
   <sourcecode name="PostCommentViewModel.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015/10/13 22:30:19.705</styleCop>
-      <settingsFile>2016/02/22 00:30:04.203</settingsFile>
+      <settingsFile>2016/02/24 01:39:47.487</settingsFile>
       <sourceFile>2016/02/21 22:05:22.853</sourceFile>
       <parser>2015/10/13 22:30:19.705</parser>
       <StyleCop.CSharp.DocumentationRules>2015/10/13 22:30:19.705</StyleCop.CSharp.DocumentationRules>
@@ -1126,7 +1112,7 @@
   <sourcecode name="AddPhoneNumberViewModel.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015/10/13 22:30:19.705</styleCop>
-      <settingsFile>2016/02/22 00:30:04.203</settingsFile>
+      <settingsFile>2016/02/24 01:39:47.487</settingsFile>
       <sourceFile>2016/02/11 20:51:02.505</sourceFile>
       <parser>2015/10/13 22:30:19.705</parser>
       <StyleCop.CSharp.DocumentationRules>2015/10/13 22:30:19.705</StyleCop.CSharp.DocumentationRules>
@@ -1149,7 +1135,7 @@
   <sourcecode name="ChangePasswordViewModel.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015/10/13 22:30:19.705</styleCop>
-      <settingsFile>2016/02/22 00:30:04.203</settingsFile>
+      <settingsFile>2016/02/24 01:39:47.487</settingsFile>
       <sourceFile>2016/02/11 20:51:02.552</sourceFile>
       <parser>2015/10/13 22:30:19.705</parser>
       <StyleCop.CSharp.DocumentationRules>2015/10/13 22:30:19.705</StyleCop.CSharp.DocumentationRules>
@@ -1172,7 +1158,7 @@
   <sourcecode name="ConfigureTwoFactorViewModel.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015/10/13 22:30:19.705</styleCop>
-      <settingsFile>2016/02/22 00:30:04.203</settingsFile>
+      <settingsFile>2016/02/24 01:39:47.487</settingsFile>
       <sourceFile>2016/02/11 20:51:02.560</sourceFile>
       <parser>2015/10/13 22:30:19.705</parser>
       <StyleCop.CSharp.DocumentationRules>2015/10/13 22:30:19.705</StyleCop.CSharp.DocumentationRules>
@@ -1195,7 +1181,7 @@
   <sourcecode name="FactorViewModel.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015/10/13 22:30:19.705</styleCop>
-      <settingsFile>2016/02/22 00:30:04.203</settingsFile>
+      <settingsFile>2016/02/24 01:39:47.487</settingsFile>
       <sourceFile>2016/02/11 20:51:02.567</sourceFile>
       <parser>2015/10/13 22:30:19.705</parser>
       <StyleCop.CSharp.DocumentationRules>2015/10/13 22:30:19.705</StyleCop.CSharp.DocumentationRules>
@@ -1218,7 +1204,7 @@
   <sourcecode name="IndexViewModel.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015/10/13 22:30:19.705</styleCop>
-      <settingsFile>2016/02/22 00:30:04.203</settingsFile>
+      <settingsFile>2016/02/24 01:39:47.487</settingsFile>
       <sourceFile>2016/02/11 20:51:02.576</sourceFile>
       <parser>2015/10/13 22:30:19.705</parser>
       <StyleCop.CSharp.DocumentationRules>2015/10/13 22:30:19.705</StyleCop.CSharp.DocumentationRules>
@@ -1241,7 +1227,7 @@
   <sourcecode name="ManageLoginsViewModel.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015/10/13 22:30:19.705</styleCop>
-      <settingsFile>2016/02/22 00:30:04.203</settingsFile>
+      <settingsFile>2016/02/24 01:39:47.487</settingsFile>
       <sourceFile>2016/02/11 20:51:02.600</sourceFile>
       <parser>2015/10/13 22:30:19.705</parser>
       <StyleCop.CSharp.DocumentationRules>2015/10/13 22:30:19.705</StyleCop.CSharp.DocumentationRules>
@@ -1264,7 +1250,7 @@
   <sourcecode name="SetPasswordViewModel.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015/10/13 22:30:19.705</styleCop>
-      <settingsFile>2016/02/22 00:30:04.203</settingsFile>
+      <settingsFile>2016/02/24 01:39:47.487</settingsFile>
       <sourceFile>2016/02/11 20:51:02.607</sourceFile>
       <parser>2015/10/13 22:30:19.705</parser>
       <StyleCop.CSharp.DocumentationRules>2015/10/13 22:30:19.705</StyleCop.CSharp.DocumentationRules>
@@ -1287,7 +1273,7 @@
   <sourcecode name="VerifyPhoneNumberViewModel.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015/10/13 22:30:19.705</styleCop>
-      <settingsFile>2016/02/22 00:30:04.203</settingsFile>
+      <settingsFile>2016/02/24 01:39:47.487</settingsFile>
       <sourceFile>2016/02/11 20:51:02.613</sourceFile>
       <parser>2015/10/13 22:30:19.705</parser>
       <StyleCop.CSharp.DocumentationRules>2015/10/13 22:30:19.705</StyleCop.CSharp.DocumentationRules>
@@ -1310,7 +1296,7 @@
   <sourcecode name="AddPostViewModel.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015/10/13 22:30:19.705</styleCop>
-      <settingsFile>2016/02/22 00:30:04.203</settingsFile>
+      <settingsFile>2016/02/24 01:39:47.487</settingsFile>
       <sourceFile>2016/02/21 20:35:49.225</sourceFile>
       <parser>2015/10/13 22:30:19.705</parser>
       <StyleCop.CSharp.DocumentationRules>2015/10/13 22:30:19.705</StyleCop.CSharp.DocumentationRules>
@@ -1333,7 +1319,7 @@
   <sourcecode name="EditPostViewModel.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015/10/13 22:30:19.705</styleCop>
-      <settingsFile>2016/02/22 00:30:04.203</settingsFile>
+      <settingsFile>2016/02/24 01:39:47.487</settingsFile>
       <sourceFile>2016/02/21 01:23:21.943</sourceFile>
       <parser>2015/10/13 22:30:19.705</parser>
       <StyleCop.CSharp.DocumentationRules>2015/10/13 22:30:19.705</StyleCop.CSharp.DocumentationRules>
@@ -1356,7 +1342,7 @@
   <sourcecode name="ListPostViewModel.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015/10/13 22:30:19.705</styleCop>
-      <settingsFile>2016/02/22 00:30:04.203</settingsFile>
+      <settingsFile>2016/02/24 01:39:47.487</settingsFile>
       <sourceFile>2016/02/20 00:10:55.819</sourceFile>
       <parser>2015/10/13 22:30:19.705</parser>
       <StyleCop.CSharp.DocumentationRules>2015/10/13 22:30:19.705</StyleCop.CSharp.DocumentationRules>
@@ -1379,8 +1365,8 @@
   <sourcecode name="PageableListPostViewModel.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015/10/13 22:30:19.705</styleCop>
-      <settingsFile>2016/02/22 00:30:04.203</settingsFile>
-      <sourceFile>2016/02/20 21:15:33.585</sourceFile>
+      <settingsFile>2016/02/24 01:39:47.487</settingsFile>
+      <sourceFile>2016/02/23 18:34:27.105</sourceFile>
       <parser>2015/10/13 22:30:19.705</parser>
       <StyleCop.CSharp.DocumentationRules>2015/10/13 22:30:19.705</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-396340723</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -1402,8 +1388,31 @@
   <sourcecode name="PostViewModel.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015/10/13 22:30:19.705</styleCop>
-      <settingsFile>2016/02/22 00:30:04.203</settingsFile>
-      <sourceFile>2016/02/21 22:03:03.499</sourceFile>
+      <settingsFile>2016/02/24 01:39:47.487</settingsFile>
+      <sourceFile>2016/02/23 23:33:30.722</sourceFile>
+      <parser>2015/10/13 22:30:19.705</parser>
+      <StyleCop.CSharp.DocumentationRules>2015/10/13 22:30:19.705</StyleCop.CSharp.DocumentationRules>
+      <StyleCop.CSharp.DocumentationRules.FilesHashCode>-396340723</StyleCop.CSharp.DocumentationRules.FilesHashCode>
+      <StyleCop.CSharp.LayoutRules>2015/10/13 22:30:19.705</StyleCop.CSharp.LayoutRules>
+      <StyleCop.CSharp.LayoutRules.FilesHashCode>0</StyleCop.CSharp.LayoutRules.FilesHashCode>
+      <StyleCop.CSharp.MaintainabilityRules>2015/10/13 22:30:19.705</StyleCop.CSharp.MaintainabilityRules>
+      <StyleCop.CSharp.MaintainabilityRules.FilesHashCode>0</StyleCop.CSharp.MaintainabilityRules.FilesHashCode>
+      <StyleCop.CSharp.NamingRules>2015/10/13 22:30:19.705</StyleCop.CSharp.NamingRules>
+      <StyleCop.CSharp.NamingRules.FilesHashCode>0</StyleCop.CSharp.NamingRules.FilesHashCode>
+      <StyleCop.CSharp.OrderingRules>2015/10/13 22:30:19.705</StyleCop.CSharp.OrderingRules>
+      <StyleCop.CSharp.OrderingRules.FilesHashCode>0</StyleCop.CSharp.OrderingRules.FilesHashCode>
+      <StyleCop.CSharp.ReadabilityRules>2015/10/13 22:30:19.705</StyleCop.CSharp.ReadabilityRules>
+      <StyleCop.CSharp.ReadabilityRules.FilesHashCode>0</StyleCop.CSharp.ReadabilityRules.FilesHashCode>
+      <StyleCop.CSharp.SpacingRules>2015/10/13 22:30:19.705</StyleCop.CSharp.SpacingRules>
+      <StyleCop.CSharp.SpacingRules.FilesHashCode>0</StyleCop.CSharp.SpacingRules.FilesHashCode>
+    </timestamps>
+    <violations />
+  </sourcecode>
+  <sourcecode name="EditProfileViewModel.cs" parser="StyleCop.CSharp.CsParser">
+    <timestamps>
+      <styleCop>2015/10/13 22:30:19.705</styleCop>
+      <settingsFile>2016/02/24 01:39:47.487</settingsFile>
+      <sourceFile>2016/02/22 14:22:19.948</sourceFile>
       <parser>2015/10/13 22:30:19.705</parser>
       <StyleCop.CSharp.DocumentationRules>2015/10/13 22:30:19.705</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-396340723</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -1425,8 +1434,8 @@
   <sourcecode name="ProfileViewModel.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015/10/13 22:30:19.705</styleCop>
-      <settingsFile>2016/02/22 00:30:04.203</settingsFile>
-      <sourceFile>2016/02/21 22:05:26.735</sourceFile>
+      <settingsFile>2016/02/24 01:39:47.487</settingsFile>
+      <sourceFile>2016/02/22 15:12:15.673</sourceFile>
       <parser>2015/10/13 22:30:19.705</parser>
       <StyleCop.CSharp.DocumentationRules>2015/10/13 22:30:19.705</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-396340723</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -1448,7 +1457,7 @@
   <sourcecode name="Startup.Auth.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015/10/13 22:30:19.705</styleCop>
-      <settingsFile>2016/02/22 00:30:04.203</settingsFile>
+      <settingsFile>2016/02/24 01:39:47.487</settingsFile>
       <sourceFile>2016/02/21 22:04:11.231</sourceFile>
       <parser>2015/10/13 22:30:19.705</parser>
       <StyleCop.CSharp.DocumentationRules>2015/10/13 22:30:19.705</StyleCop.CSharp.DocumentationRules>
@@ -1471,7 +1480,7 @@
   <sourcecode name="Startup.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015/10/13 22:30:19.705</styleCop>
-      <settingsFile>2016/02/22 00:30:04.203</settingsFile>
+      <settingsFile>2016/02/24 01:39:47.487</settingsFile>
       <sourceFile>2016/02/21 22:06:01.663</sourceFile>
       <parser>2015/10/13 22:30:19.705</parser>
       <StyleCop.CSharp.DocumentationRules>2015/10/13 22:30:19.705</StyleCop.CSharp.DocumentationRules>

@@ -3,6 +3,9 @@
   <project key="-189392099">
     <configuration>DEBUG;TRACE</configuration>
   </project>
+  <project key="-995363694">
+    <configuration>TRACE</configuration>
+  </project>
   <sourcecode name="AssemblyHelpers.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015/10/13 22:30:19.705</styleCop>
