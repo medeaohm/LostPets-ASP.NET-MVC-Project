@@ -5,6 +5,7 @@
 }
 @using (Html.BeginForm("Add", "Posts", FormMethod.Post, new { @class = "form", enctype = "multipart/form-data" }))
 {
+    @Html.AntiForgeryToken()
     <div class="container" style="position:center">
         <h1 class="col-lg-12 well text-center">Add New Post</h1>
         <div class="col-lg-12 well" style="padding-left:5em; padding-right:-5em;">

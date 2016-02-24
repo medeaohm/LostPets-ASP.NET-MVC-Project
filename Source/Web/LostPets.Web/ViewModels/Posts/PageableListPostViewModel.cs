@@ -11,7 +11,7 @@
 
         public int TotalPages { get; set; }
 
-        [Display(Name ="Post Type")]
+        [Display(Name = "Post Type")]
         public PostType? PostType { get; set; }
 
         [Display(Name = "Pet Type")]

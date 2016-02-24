@@ -412,7 +412,7 @@
     <configuration>DEBUG;TRACE</configuration>
   </project>
   <project key="716083024">
-    <configuration>TRACE</configuration>
+    <configuration>DEBUG;TRACE</configuration>
   </project>
   <sourcecode name="Comment.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>

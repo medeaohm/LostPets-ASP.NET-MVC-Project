@@ -99,7 +99,7 @@
     <configuration>DEBUG;TRACE</configuration>
   </project>
   <project key="380955253">
-    <configuration>TRACE</configuration>
+    <configuration>DEBUG;TRACE</configuration>
   </project>
   <sourcecode name="BaseModel{TKey}.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>

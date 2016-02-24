@@ -4,7 +4,7 @@
     <configuration>DEBUG;TRACE</configuration>
   </project>
   <project key="-330861270">
-    <configuration>TRACE</configuration>
+    <configuration>DEBUG;TRACE</configuration>
   </project>
   <sourcecode name="HttpCacheService.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>

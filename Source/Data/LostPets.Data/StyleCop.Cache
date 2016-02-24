@@ -131,7 +131,7 @@
     <configuration>DEBUG;TRACE</configuration>
   </project>
   <project key="-1109315001">
-    <configuration>TRACE</configuration>
+    <configuration>DEBUG;TRACE</configuration>
   </project>
   <sourcecode name="LostPetsDbContext.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
@@ -183,7 +183,7 @@
     <timestamps>
       <styleCop>2015/10/13 22:30:19.705</styleCop>
       <settingsFile>2016/02/24 01:38:25.838</settingsFile>
-      <sourceFile>2016/02/21 22:03:34.486</sourceFile>
+      <sourceFile>2016/02/24 11:52:13.093</sourceFile>
       <parser>2015/10/13 22:30:19.705</parser>
       <StyleCop.CSharp.DocumentationRules>2015/10/13 22:30:19.705</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-396340723</StyleCop.CSharp.DocumentationRules.FilesHashCode>

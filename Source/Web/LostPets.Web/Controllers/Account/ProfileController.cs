@@ -48,8 +48,6 @@
             {
                 var user = this.Users.GetById(this.CurrentUser.Id);
 
-                //user.UserName = user.UserName;
-                //user.Email = user.Email;
                 user.FirstName = profile.FirstName;
                 user.LastName = profile.LastName;
                 user.HomeCity = profile.HomeCity;

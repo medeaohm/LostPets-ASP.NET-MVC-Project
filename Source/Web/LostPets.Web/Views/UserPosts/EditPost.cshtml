@@ -41,7 +41,7 @@
                         @Html.LabelFor(m => m.Content)
                     </div>
                     <div class="row">
-                        @Html.TextBoxFor(m => m.Content, new { @class = "form-control", @value = "@Model.Content" })
+                        @Html.TextAreaFor(m => m.Content, new { @class = "form-control", @value = "@Model.Content" })
                     </div>
                     <div>
                         @Html.ValidationMessageFor(m => m)
@@ -91,7 +91,7 @@
                         @Html.LabelFor(m => m.Location.AdditionalInfo)
                     </div>
                     <div class="row">
-                        @Html.TextBoxFor(m => m.Location.AdditionalInfo, new { @class = "form-control", @value = "@Model.Location.AdditionalInfo" })
+                        @Html.TextAreaFor(m => m.Location.AdditionalInfo, new { @class = "form-control", @value = "@Model.Location.AdditionalInfo" })
                     </div>
                     <div>
                         @Html.ValidationMessageFor(m => m)
@@ -143,7 +143,7 @@
                         @Html.LabelFor(m => m.Pet.Description)
                     </div>
                     <div class="row">
-                        @Html.TextBoxFor(m => m.Pet.Description, new { @class = "form-control", @value = "@Model.Pet.Description" })
+                        @Html.TextAreaFor(m => m.Pet.Description, new { @class = "form-control", @value = "@Model.Pet.Description" })
                     </div>
                     <div>
                         @Html.ValidationMessageFor(m => m)
