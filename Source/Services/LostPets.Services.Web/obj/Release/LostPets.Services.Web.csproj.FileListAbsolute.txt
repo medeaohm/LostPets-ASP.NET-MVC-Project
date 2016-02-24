@@ -1,5 +1,0 @@
-C:\Users\Adrian\Desktop\LostPets-ASP.NET-MVC-Project\Source\Services\LostPets.Services.Web\bin\Release\LostPets.Services.Web.dll
-C:\Users\Adrian\Desktop\LostPets-ASP.NET-MVC-Project\Source\Services\LostPets.Services.Web\bin\Release\LostPets.Services.Web.pdb
-C:\Users\Adrian\Desktop\LostPets-ASP.NET-MVC-Project\Source\Services\LostPets.Services.Web\obj\Release\LostPets.Services.Web.csprojResolveAssemblyReference.cache
-C:\Users\Adrian\Desktop\LostPets-ASP.NET-MVC-Project\Source\Services\LostPets.Services.Web\obj\Release\LostPets.Services.Web.dll
-C:\Users\Adrian\Desktop\LostPets-ASP.NET-MVC-Project\Source\Services\LostPets.Services.Web\obj\Release\LostPets.Services.Web.pdb
