@@ -1,0 +1,9 @@
+C:\Users\Adrian\Desktop\LostPets-ASP.NET-MVC-Project\Source\Tests\LostPets.Services.Web.Tests\bin\Release\LostPets.Services.Web.Tests.dll
+C:\Users\Adrian\Desktop\LostPets-ASP.NET-MVC-Project\Source\Tests\LostPets.Services.Web.Tests\bin\Release\LostPets.Services.Web.Tests.pdb
+C:\Users\Adrian\Desktop\LostPets-ASP.NET-MVC-Project\Source\Tests\LostPets.Services.Web.Tests\bin\Release\LostPets.Services.Web.dll
+C:\Users\Adrian\Desktop\LostPets-ASP.NET-MVC-Project\Source\Tests\LostPets.Services.Web.Tests\bin\Release\nunit.framework.dll
+C:\Users\Adrian\Desktop\LostPets-ASP.NET-MVC-Project\Source\Tests\LostPets.Services.Web.Tests\bin\Release\LostPets.Services.Web.pdb
+C:\Users\Adrian\Desktop\LostPets-ASP.NET-MVC-Project\Source\Tests\LostPets.Services.Web.Tests\bin\Release\nunit.framework.xml
+C:\Users\Adrian\Desktop\LostPets-ASP.NET-MVC-Project\Source\Tests\LostPets.Services.Web.Tests\obj\Release\LostPets.Services.Web.Tests.csprojResolveAssemblyReference.cache
+C:\Users\Adrian\Desktop\LostPets-ASP.NET-MVC-Project\Source\Tests\LostPets.Services.Web.Tests\obj\Release\LostPets.Services.Web.Tests.dll
+C:\Users\Adrian\Desktop\LostPets-ASP.NET-MVC-Project\Source\Tests\LostPets.Services.Web.Tests\obj\Release\LostPets.Services.Web.Tests.pdb
