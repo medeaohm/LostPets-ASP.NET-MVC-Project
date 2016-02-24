@@ -12,10 +12,12 @@
     public class AddPostViewModel : BaseModel<int>, IMapFrom<Post>, IHaveCustomMappings
     {
         [Required]
+        [StringLength(100, ErrorMessage = "The {0} must be at least {2} characters long.", MinimumLength = 5)]
         [UIHint("SingleLineText")]
         public string Title { get; set; }
 
         [Required]
+        [StringLength(500, ErrorMessage = "Content too long")]
         [UIHint("MultiLineText")]
         public string Content { get; set; }
 

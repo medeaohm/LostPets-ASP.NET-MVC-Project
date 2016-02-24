@@ -5,7 +5,6 @@
 
     using Infrastructure.Mapping;
     using Services.Data;
-    using ViewModels.Comments;
     using ViewModels.Posts;
 
     public class HomeController : BaseController

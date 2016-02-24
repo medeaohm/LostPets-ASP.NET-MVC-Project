@@ -18,18 +18,21 @@
             this.images = images;
         }
 
+        [Authorize]
         public ActionResult ViewMyProfile()
         {
             var user = this.Mapper.Map<ProfileViewModel>(this.Users.GetById(this.CurrentUser.Id));
             return this.View(user);
         }
 
+        [Authorize]
         public ActionResult ViewUserProfile(string id)
         {
             var user = this.Mapper.Map<ProfileViewModel>(this.Users.GetById(id));
             return this.View(user);
         }
 
+        [Authorize]
         public ActionResult EditProfile(string id)
         {
             var user = this.Mapper.Map<EditProfileViewModel>(this.Users.GetById(this.CurrentUser.Id));
@@ -41,35 +44,42 @@
         [ValidateAntiForgeryToken]
         public ActionResult EditProfile(EditProfileViewModel profile, string id)
         {
-            var user = this.Users.GetById(this.CurrentUser.Id);
-
-            user.FirstName = profile.FirstName;
-            user.LastName = profile.LastName;
-            user.HomeCity = profile.HomeCity;
-            user.Gender = profile.Gender;
-            user.PhoneNumber = profile.PhoneNumber;
-            user.FacebookProfile = profile.FacebookProfile;
-
-            if (profile.UploadedImage != null)
+            if (profile != null && this.ModelState.IsValid)
             {
-                using (var memory = new MemoryStream())
-                {
-                    profile.UploadedImage.InputStream.CopyTo(memory);
-                    var content = memory.GetBuffer();
+                var user = this.Users.GetById(this.CurrentUser.Id);
 
-                    user.ProfilePicture = new Photo
+                //user.UserName = user.UserName;
+                //user.Email = user.Email;
+                user.FirstName = profile.FirstName;
+                user.LastName = profile.LastName;
+                user.HomeCity = profile.HomeCity;
+                user.Gender = profile.Gender;
+                user.PhoneNumber = profile.PhoneNumber;
+                user.FacebookProfile = profile.FacebookProfile;
+
+                if (profile.UploadedImage != null)
+                {
+                    using (var memory = new MemoryStream())
                     {
-                        Content = content,
-                        FileExtension = profile.UploadedImage.FileName.Split(new[] { '.' }).Last()
-                    };
-                    this.images.Update();
+                        profile.UploadedImage.InputStream.CopyTo(memory);
+                        var content = memory.GetBuffer();
+
+                        user.ProfilePicture = new Photo
+                        {
+                            Content = content,
+                            FileExtension = profile.UploadedImage.FileName.Split(new[] { '.' }).Last()
+                        };
+                        this.images.Update();
+                    }
                 }
+
+                this.Users.Update();
+
+                this.TempData["Notification"] = "Profile Updeted Succesfully!";
+                return this.RedirectToAction("ViewMyProfile");
             }
 
-            this.Users.Update();
-
-            this.TempData["Notification"] = "Profile Updeted Succesfully!";
-            return this.RedirectToAction("ViewMyProfile");
+            return this.View(profile);
         }
 
         public ActionResult Image(int id)

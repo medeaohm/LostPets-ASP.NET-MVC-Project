@@ -81,6 +81,7 @@
             return this.View(viewModel);
         }
 
+        [Authorize]
         public ActionResult EditPost(int? id)
         {
             if (id == null)
@@ -102,46 +103,51 @@
         [ValidateAntiForgeryToken]
         public ActionResult EditPost(EditPostViewModel post, int id)
         {
-            var databasePost = this.posts.GetById(id);
-            databasePost.PostType = post.PostType;
-            databasePost.Title = post.Title;
-            databasePost.Content = post.Content;
-
-            var pet = this.pets.GetById(post.PetId);
-            pet.PetType = post.Pet.PetType;
-            pet.Name = post.Pet.Name;
-            pet.Age = post.Pet.Age;
-            pet.Description = post.Pet.Description;
-            pet.Color = post.Pet.Color;
-
-            var location = this.locations.GetById(post.LocationId);
-            location.City = post.Location.City;
-            location.Street = post.Location.Street;
-            location.AdditionalInfo = post.Location.AdditionalInfo;
-
-            if (post.UploadedImage != null)
+            if (post != null && this.ModelState.IsValid)
             {
-                using (var memory = new MemoryStream())
-                {
-                    post.UploadedImage.InputStream.CopyTo(memory);
-                    var content = memory.GetBuffer();
+                var databasePost = this.posts.GetById(id);
+                databasePost.PostType = post.PostType;
+                databasePost.Title = post.Title;
+                databasePost.Content = post.Content;
 
-                    var image = new Photo
+                var pet = this.pets.GetById(post.PetId);
+                pet.PetType = post.Pet.PetType;
+                pet.Name = post.Pet.Name;
+                pet.Age = post.Pet.Age;
+                pet.Description = post.Pet.Description;
+                pet.Color = post.Pet.Color;
+
+                var location = this.locations.GetById(post.LocationId);
+                location.City = post.Location.City;
+                location.Street = post.Location.Street;
+                location.AdditionalInfo = post.Location.AdditionalInfo;
+
+                if (post.UploadedImage != null)
+                {
+                    using (var memory = new MemoryStream())
                     {
-                        Content = content,
-                        FileExtension = post.UploadedImage.FileName.Split(new[] { '.' }).Last()
-                    };
-                    this.images.Update();
-                    databasePost.Gallery.Add(image);
+                        post.UploadedImage.InputStream.CopyTo(memory);
+                        var content = memory.GetBuffer();
+
+                        var image = new Photo
+                        {
+                            Content = content,
+                            FileExtension = post.UploadedImage.FileName.Split(new[] { '.' }).Last()
+                        };
+                        this.images.Update();
+                        databasePost.Gallery.Add(image);
+                    }
                 }
+
+                this.pets.Update();
+                this.locations.Update();
+                this.posts.Update();
+
+                this.TempData["Notification"] = "Post Edited Succesfully!";
+                return this.RedirectToAction("AllByUser");
             }
 
-            this.pets.Update();
-            this.locations.Update();
-            this.posts.Update();
-
-            this.TempData["Notification"] = "Post Edited Succesfully!";
-            return this.RedirectToAction("AllByUser");
+            return this.View(post);
         }
 
         [Authorize]
@@ -162,6 +168,7 @@
             return this.View(viewModel);
         }
 
+        [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)

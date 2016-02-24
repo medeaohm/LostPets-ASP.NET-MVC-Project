@@ -181,12 +181,14 @@
                     HomeCity = model.HomeCity,
                     PhoneNumber = model.PhoneNumber,
                     FacebookProfile = model.FacebookProfile,
-                    UserRole = GlobalConstants.UserRole,
                     CreatedOn = DateTime.Now
                 };
+
                 var result = await this.UserManager.CreateAsync(user, model.Password);
+
                 if (result.Succeeded)
                 {
+                    this.UserManager.AddToRole(user.Id, GlobalConstants.UserRole);
                     await this.SignInManager.SignInAsync(user, isPersistent: false, rememberBrowser: false);
 
                     // For more information on how to enable account confirmation and password reset please visit http://go.microsoft.com/fwlink/?LinkID=320771

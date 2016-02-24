@@ -25,6 +25,7 @@
 
         public Photo Photo { get; set; }
 
+        [Display(Name = "Post Type")]
         public PostType PostType { get; set; }
 
         public Pet Pet { get; set; }

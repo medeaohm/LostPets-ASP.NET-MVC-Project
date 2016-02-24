@@ -62,13 +62,11 @@
                 this.userManager.AddToRole(user.Id, GlobalConstants.UserRole);
             }
 
-            var imageAdmin = this.GetImage("admin.jpe");
             var adminUser = new User
             {
                 Email = "admin@mysite.com",
                 UserName = "Admin",
                 CreatedOn = DateTime.Now,
-                ProfilePicture = imageAdmin
             };
 
             this.userManager.Create(adminUser, "admin123456");
